@@ -1,0 +1,34 @@
+Data Scientist dan R
+    Halo, selamat datang di course perkenalan DQLab yang menandai perjalanan Anda sebagai Data Scientist!
+
+    Data Scientist sendiri adalah profesi yang sangat menjanjikan saat ini, dimana Anda akan merubah data-data yang sebelumnya tidak kelihatan berguna menjadi informasi yang berharga. Untuk mewujudkan hal itu, seorang data scientist tetap memerlukan suatu software yang penggunaan cukup simpel namun kuat (simple but powerful).
+
+    Nah, software tersebut dinamakan R yang merupakan software pemrograman untuk data.
+
+
+Apa dan kenapa R?
+    R adalah nama sebuah bahasa pemrograman sekaligus software untuk pengolahan data dan grafik. R sangat popular saat ini karena tiga hal berikut:
+
+        1. Banyak pilihan pengolahan data dengan jumlah fitur yang sangat komplit - dari grafik sampai machine learning.
+        2. Lebih cepat dipelajari dan dijalankan untuk mengolah data dibandingkan dengan bahasa lain. 
+        3. R bersifat gratis dan open source yang artinya, tidak perlu biaya lisensi yang biasanya sangat mahal untuk software pengolahan data.
+
+
+Perusahaan mana yang sudah menggunakan R?
+    "Tidak ada asap tanpa api", demikian suatu peribahasa yang menyatakan tidak ada rumor tanpa ada fakta yang menyertai.
+
+    R sedemikian populer juga disebabkan karena digunakan perusahaan-perusahaan besar dunia. Beberapa diantaranya adalah AirBnB untuk data science, Microsoft untuk menambahkan fungsionalitas di produk-produknya, Uber untuk analisa statistik, Facebook untuk behavior analysis, dan lain-lain.
+
+
+"Hello World"
+    Dalam setiap pembelajaran pemograman, memunculkan tulisan "Hello World" sebagai tradisi dunia pada saat mulai belajar programming :)
+    Mari kita lakukan hal yang sama untuk R dengan halaman Live Code Editor ini.
+
+    Tugas Praktek
+        Cobalah ketikkan "Hello World" (tulis persis dengan huruf besar, huruf kecil dan tanda kutipnya) pada bagian Code Editor.
+
+        Klik tombol Run Code untuk menjalankan R dan mengeluarkan hasil di bagian Console.
+
+        Untuk memeriksa hasil Anda apakah sudah benar sekaligus melanjutkan ke bagian berikutnya, klik tombol Submit Code.
+
+            "Hello World"
