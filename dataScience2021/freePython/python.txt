@@ -1,0 +1,131 @@
+Apa itu Python? - Part 1
+    Halo, perkenalkan namaku Aksara! Aku baru saja pindah ke divisi data di perusahaanku. Awalnya aku kaget, tapi lambat laun aku bisa mengikuti pelajarannya, terutama karena aku bertemu mentor yang tepat: Senja!
+
+    Setiap hari aku selalu diberi materi baru tentang Python. Aku sering mendengar bahasa pemrograman itu, tapi belum pernah praktik langsung. Jadi, saat diberi kesempatan belajar langsung dari dasar oleh Senja, buatku ini kesempatan yang enggak boleh dilewatkan! Seperti sekarang, aku sedang membaca hand out dari Senja yang membahas apa itu Python.
+
+
+Apa itu Python? - Part 2
+    Python adalah bahasa pemrograman yang ditujukan untuk general-purpose programming dan termasuk dalam kategori high-level programming language.
+
+        Sebagai general-purpose programming language, Python digunakan untuk berbagai macam permasalahan seperti: pengembangan aplikasi web ataupun mobile, data science, dll.
+        Python masuk ke dalam kategori high-level programming language dikarenakan bahasa pemrograman Python yang mudah untuk dibaca dan dituliskan oleh manusia.
+
+    Bahasa  pemrograman  Python  diciptakan  oleh  Guido  van Rossum dan pertama kali diperkenalkan pada tahun 1991 sebagai sebuah proyek open-source. Lisensi dari Python bersifat open-source dari Python atau dengan kata lain setiap orang dapat mengembangkan program komputer dengan menggunakan bahasa pemrograman Python baik untuk tujuan komersil/non-komersil.
+
+
+Data Science dan Python
+    “Apakah ada pertanyaan, Aksara?” tanya Senja yang menghampiri meja kerjaku.
+    Aku menggunakan kesempatan ini untuk bertanya lebih jauh. “Apa kaitan Python dan Data Science ya?”
+
+    Senja menjelaskan “Python adalah bahasa yang ditujukan untuk general-purpose programming, jenis high-level programming language dan berlisensi open source”
+    “Karena tiga karakteristik itulah, banyak pengembang membuat library python ditujukan untuk data science dan tentunya memudahkan pengguna dalam melakukan analisis dan membuat model prediktif dalam data science.
+
+    List library Python ini dapat kamu gunakan untuk data science,” ujar Senja sembari memutar layar laptopnya ke hadapanku:
+
+
+List Library Python
+        1. Numpy (numerical python) adalah library yang memudahkan dalam pendefinisian array baik 1D, 2D, 3D atau nD, dan juga memiliki fungsi-fungsi untuk aljabar linier.
+        2. Scipy (Scientific Python) merupakan library yang ditujukan untuk keperluan komputasi saintifik seperti keperluan aljabar linier, integrasi dan diferensiasi numerik, transformasi Fourier, optimasi, interpolasi, statistik dan yang lainnya.
+        3. Pandas adalah library untuk pengolahan data dalam bentuk tabular (seperti excel) yang merupakan de facto library bagi data scientist dalam mengolah data dari berbagai sumber seperti file CSV, TSV, Excel, SQL queries, Google BigQuery, SAS, Stata, SPSS, dsb.
+        4. Matplotlib digunakan untuk visualisasi dari data ke dalam berbagai bentuk grafik 2D atau 3D, seperti line chart, bar chart, histogram, polar chart, error bar plot, dan jenis grafik lainnya.
+        5. Scikit-learn adalah Scipy Toolkit yang ditujukan untuk menghasilkan model predictive dengan menggunakan machine learning.
+        6. Seaborn merupakan library yang dibuat dari matplotlib yang ditujukan oleh visualisasi grafik statistik dengan warna yang menawan, terintegrasi dengan baik dengan pandas.
+    Masih banyak library lainnya yang memiliki kemampuan yang sama atau lebih dari yang telah dijelaskan. Tetapi list library ini adalah library dasar yang wajib dikuasai oleh pemula dalam Data Science sebelum menggunakan library lainnya.
+
+
+Struktur Bahasa Python
+    Dari penjelasan Senja, aku lebih paham kaitan antara Data Science dengan Python.
+    "Tapi, untuk mulai belajar Bahasa Pemrograman Python apa yang harus aku pelajari lebih dulu ya?" Tanyaku pada Senja
+    "Pertama, kamu harus mempelajari Struktur Bahasa Python." ujar Senja.
+
+    Yuk, kita mulai! 
+
+
+Struktur Bahasa Python - Part 2
+    Aku menyimak tampilan layar laptop, berusaha memahami catatan Senja untuk struktur bahasa Python yang dapat aku gunakan:
+
+    1. Statements >> instruksi yang diberikan secara baris per baris untuk dijalankan oleh program
+    2. Variables >> pengindentifikasian yang  digunakan untuk menampung sebuah data atau informasi
+    3. Literals >> data atau informasi yang digunakan untuk mengisi suatu variabel
+    4. Operators >> simbol-simbol yang digunakan untuk mengubah nilai dari satu variabel dengan melibatkan satu atau lebih variabel dan literal.
+    5. Reserved Words >> kumpulan kata-kata yang memiliki makna khusus dalam bahasa pemrograman Python dan tidak dapat digunakan untuk variables dan literals
+    6. Whitespace >> pada bahasa Python, spasi dan tab memiliki makna khusus untuk menandai serangkaian blok dalam kode Python
+    7. Comments >> merupakan sekumpulan teks yang dituliskan di dalam sebuah program yang tidak akan mempengaruhi hasil dari sebuah program
+
+    Kata Senja kalau mau menjadi ahli, harus sering latihan. Aku tidak sabar untuk langsung praktek!
+
+
+Python “Hello World” & Statement
+    print("Hello World.")
+    print("Saya Riki, baru belajar Python.")
+
+
+Variables di Python
+    Sekarang kita akan mempelajari teknik penulisan variables pada Python dengan mengikuti contoh yang sudah disediakan Senja. Berikut adalah 3 aturan penting yang wajib diikuti pada saat kita mendeklarasikan suatu variabel di Python. 
+
+        1. Nama dari sebuah variabel harus dimulai dengan huruf (a-z, A-Z) atau karakter garis bawah underscore (_) dan tidak dapat dimulai dengan angka (0-9).
+        2. Variabel hanya boleh mengandung karakter alfabet dan bilangan dan underscore (a-z, A-Z, 0-9, _)
+        3. Variabel bersifat case-sensitive yang mengartikan bahwa variabel TINGGI, tinggi, dan Tinggi merujuk pada tiga variabel berbeda.
+
+            bil1 = 10
+            Bil_2 = 20
+            Frasa = "Halo Dunia"
+            bil1, Bil_2 = 10, 20
+            salam = "Selamat Pagi"; Penutup = "Salam Sejahtera"
+
+
+Comments di Python
+    Selanjutnya, aku mempelajari penggunaan comments pada Python.
+
+    Comments adalah sekumpulan teks yang dituliskan dalam sebuah program dan tidak akan mempengaruhi hasil dari sebuah program. Berikut adalah contoh penulisan single line comment & multi line comment pada python. 
+
+    "Walaupun tidak mempengaruhi hasil program, comments adalah salah satu komponen yang penting dalam pengembangan program. Hal tersebut dikarenakan comments dapat kita selipkan di antara sekumpulan statements untuk dapat berkomunikasi dengan rekan data lainnya dalam satu tim” Senja kembali menjelaskan.
+
+        #perintah pada beris ini tidak mempengaruhi program
+        ...
+        perintah ini tidak akan di eksekusi oleh Python
+        dan perintah ini juga tidak akan dieksekusi
+        perintah ini juga tidak akan dieksekusi
+        ...
+        print("jadi # digunakan untuk membuat comment pada Python")
+
+
+Tugas Praktek
+    text = "Belajar Python di DQLab."
+    print(list(text))
+    print(tuple(text))
+    print(set(text))
+
+    output :
+    In [1]: text = "Belajar Python di DQLab."
+            print(list(text))
+            print(tuple(text))
+            print(set(text))
+
+    ['B', 'e', 'l', 'a', 'j', 'a', 'r', ' ', 'P', 'y', 't', 'h', 'o', 'n', ' ', 'd', 'i', ' ', 'D', 'Q', 'L', 'a', 'b', '.']
+    ('B', 'e', 'l', 'a', 'j', 'a', 'r', ' ', 'P', 'y', 't', 'h', 'o', 'n', ' ', 'd', 'i', ' ', 'D', 'Q', 'L', 'a', 'b', '.')
+    {'D', 'd', 'P', '.', 'b', 'y', 'h', 'o', 'j', 'r', 'a', 't', 'n', 'i', 'B', 'L', 'l', 'e', ' ', 'Q'}
+
+
+Menggunakan Library di Python
+    “Senja, satu lagi, boleh ajarin bagaimana menggunakan library di Python? Berhubung untuk data science sangat diperlukan.”
+
+    “Boleh. Library pada Python dapat diakses di kode program dengan mengimportnya terlebih dahulu, ada dua cara yang dapat digunakan. Sebentar saya share ke kamu ya, ini caranya.”
+
+    Tugas:
+    Menggunakan perintah import nama_library atau import nama_library as alias.
+
+        import math
+        import numpy as np
+        import pandas as pd
+        import seaborn as sns
+
+    Aku langsung antusias mencoba contoh yang diberikan Senja menggunakan Live Code Editor. Jika telah dijalankan dengan menekan tombol Run dan pada console tidak ada error yang ditampilkan, berarti aku telah sukses memanggil library pada Python.
+
+    “Yeay, makasih Senja!” Ini baru jalan awal aku memahami lebih dalam dunia data melalui Python, tapi aku sudah merasa kalau ini bidang yang penuh tantangan. Enggak masalah, karena aku yakin aku bisa!
+
+
+Selamat untuk kamu!
+    Kamu baru saja mempelajari dasar awal Bahasa Pemrograman Python sebagai langkah awal belajar data science.
+
+    Masih banyak modul pelajaran yang akan kamu pelajari lebih dalam untuk mengaplikasikan teknik data science secara tepat menggunakan beragam studi kasus Industri. 
