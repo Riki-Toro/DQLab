@@ -1,0 +1,133 @@
+Data Frame
+    Data frame adalah jenis struktur data yang dirancang untuk representasi table, yang terdiri dari banyak kolom dengan tiap kolom berisi list ataupun vector dengan jumlah data yang sama.
+
+    Untuk membuat data frame kita bisa gunakan function data.frame.
+
+    Panel code editor telah dilengkapi contoh code untuk membuat data frame untuk data mahasiswa. Jalankan dengan tombol  untuk melihat hasilnya.
+
+    Tugas
+
+    Tambahkan pada code editor, tugas-tugas berikut. Code-code yang sebelumnya ada di code editor tidak boleh dihapus
+
+    Buatlah vector terbaru bernama akreditasi dengan isi ("A","A","B","A","A")
+    Buat satu data frame dengan nama info_mahasiswa yang terdiri dari dua vector dari contoh ditambah dengan vector akreditasi.
+    Tampilkan data frame info_mahasiswa.
+
+
+        #Membuat dua variable vector
+        fakultas <- c("Bisnis", "D3 Perhotelan", "ICT", "Ilmu Komunikasi", "Seni dan Desain")
+        jumlah_mahasiswa <- c(260, 28, 284, 465, 735)
+
+        #Membuat data frame dari kedua vector di atas
+        info_mahasiswa <- data.frame(fakultas, jumlah_mahasiswa)
+
+        #Melihat isi data frame
+        info_mahasiswa
+
+        #Buat vector baru sebagai representasi akreditasi
+        akreditasi <- c("A","A","B","A","A")
+
+        #Buat data frame dari ketiga vector di atas
+        info_mahasiswa <- data.frame(fakultas, jumlah_mahasiswa, akreditasi)
+
+        print(info_mahasiswa)
+
+    output : 
+
+        > #Membuat dua variable vector
+        > fakultas <- c("Bisnis", "D3 Perhotelan", "ICT", "Ilmu Komunikasi", "Seni dan Desain")
+
+        > jumlah_mahasiswa <- c(260, 28, 284, 465, 735)
+
+        > #Membuat data frame dari kedua vector di atas
+        > info_mahasiswa <- data.frame(fakultas, jumlah_mahasiswa)
+
+        > #Melihat isi data frame
+        > info_mahasiswa
+                fakultas jumlah_mahasiswa
+        1          Bisnis              260
+        2   D3 Perhotelan               28
+        3             ICT              284
+        4 Ilmu Komunikasi              465
+        5 Seni dan Desain              735
+
+        > #Buat vector baru sebagai representasi akreditasi
+        > akreditasi <- c("A","A","B","A","A")
+
+        > #Buat data frame dari ketiga vector di atas
+        > info_mahasiswa <- data.frame(fakultas, jumlah_mahasiswa, akreditasi)
+
+        > info_mahasiswa
+                fakultas jumlah_mahasiswa akreditasi
+        1          Bisnis              260          A
+        2   D3 Perhotelan               28          A
+        3             ICT              284          B
+        4 Ilmu Komunikasi              465          A
+        5 Seni dan Desain              735          A
+
+
+
+
+Cara Akses Data Frame
+    Data frame memiliki banyak kolom dan bisa diakses dengan nama kolom yang digunakan. Caranya adalah menggunakan accessor dengan tanda $ yang diikuti dengan nama kolom.
+
+    Contoh: info_mahasiswa$fakultas.
+
+    Panel code editor telah dilengkapi contoh code untuk membuat data frame untuk data mahasiswa dan akses kolom jumlah_mahasiswa. Jalankan dengan tombol      untuk melihat hasilnya.
+
+    Tugas
+
+    Tambahkan code untuk menampilkan kolom fakultas dari data frame info_mahasiswa. Code yang sudah terdapat di code editor tidak boleh dihapus
+
+    Klik tombol  (submit) untuk mengirimkan code ke sistem DQLab dan melakukan scoring apakah code Anda sudah benar atau tidak.
+
+
+        #Membuat tiga variable vector
+        fakultas <- c("Bisnis", "D3 Perhotelan", "ICT", "Ilmu Komunikasi", "Seni dan Desain")
+        jumlah_mahasiswa <- c(260, 28, 284, 465, 735)
+        akreditasi <- c("A","A","B","A","A")
+
+        #Membuat data frame dari kedua vector di atas
+        info_mahasiswa <- data.frame(fakultas, jumlah_mahasiswa, akreditasi)
+
+        #Menampilkan kolom jumlah_mahasiswa
+        info_mahasiswa$jumlah_mahasiswa
+
+        #Menampilkan kolom fakultas
+        info_mahasiswa$fakultas
+
+    output : 
+
+        > #Membuat tiga variable vector
+        > fakultas <- c("Bisnis", "D3 Perhotelan", "ICT", "Ilmu Komunikasi", "Seni dan Desain")
+
+        > jumlah_mahasiswa <- c(260, 28, 284, 465, 735)
+
+        > akreditasi <- c("A","A","B","A","A")
+
+        > #Membuat data frame dari kedua vector di atas
+        > info_mahasiswa <- data.frame(fakultas, jumlah_mahasiswa, akreditasi)
+
+        > #Menampilkan kolom jumlah_mahasiswa
+        > info_mahasiswa$jumlah_mahasiswa
+        [1] 260  28 284 465 735
+
+        > #Menampilkan kolom fakultas
+        > info_mahasiswa$fakultas
+        [1] Bisnis          D3 Perhotelan   ICT             Ilmu Komunikasi
+        [5] Seni dan Desain
+        Levels: Bisnis D3 Perhotelan ICT Ilmu Komunikasi Seni dan Desain
+
+
+
+
+Kesimpulan
+    Anda telah belajar mengenai tiga tipe data fundamental yang sangat penting di R pada bab ini, yaitu vector, list dan data frame. Tiga tipe data ini dapat diisi dengan lebih dari satu nilai.
+
+    Ringkasan dari tipe-tipe data tersebut adalah sebagai berikut.
+
+        1. Vector hanya bisa diisi dengan salah satu tipe data saja di seluruh elemennya, misalkan angka ataupun teks. Pembuatan vector menggunakan fungsi c, dan bisa diakses dengan accessor dengan angka indeks yang diapit kurung siku. Namun jika berupa named vector, maka indeksnya adalah berupa teks.
+        2.List adalah tipe data yang bisa diisi dengan lebih dari satu tipe data di seluruh elemennya, dengan campuran teks dan angka misalnya. Pembuatan list adalah menggunakan fungsi list, dan seperti vector elemen pada list diakses dengan accessor yang diapit kurung siku.
+        3. Data Frame adalah tipe data yang terdiri dari satu atau beberapa vector ataupun list. Untuk membuat data frame kita gunakan fungsi  data.frame, dan kita bisa mengakses menggunakan accessor $ diikuti nama kolom, dan juga angka indeks.
+
+    Dengan memahami penggunaan vector, list dan data frame kita siap mempelajari penggunaan banyak fungsi advanced di R, seperti menghasilkan grafik dan penggunaan algoritma machine learning.
