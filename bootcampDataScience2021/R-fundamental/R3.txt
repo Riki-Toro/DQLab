@@ -1,0 +1,101 @@
+Variable
+    Angka-angka yang kita gunakan dapat juga disimpan dengan sesuatu yang dinamakan variable. Variable memiliki nama yang dapat kita definisikan dan gunakan untuk mengambil nilainya kembali.
+
+    Untuk memahami hal ini, cobalah ketik perintah berikut pada Code Editor.
+
+        budi_berat_kg <- 68
+
+        santi_berat_kg <- 54.5
+
+        budi_berat_kg
+
+        santi_berat_kg
+
+    Jalankan keempat perintah di atas dengan mengklik  dan hasilnya adalah sebagai berikut.
+
+        > budi_berat_kg <- 68
+
+        > santi_berat_kg <- 54.5
+
+        > budi_berat_kg
+        [1] 68
+
+        > santi_berat_kg
+        [1] 54.5
+
+    Penjelasan Hasil
+
+        budi_berat_kg <- 68
+            Memasukkan data berupa angka 68 ke dalam variable bernama budi_berat_kg. Maksud variable tersebut dinamakan demikian untuk menyatakan bahwa angka yang dimasukkan mewakili berat badan seorang bernama Budi dalam satuan kilogram – atau singkatnya berat Budi 68 kg.
+            Nilai dimasukkan dengan bantuan operator <-. Operator ini disebut assignment operator. Perhatikan bahwa perintah ini juga tidak mengeluarkan output apapun di bawahnya.
+
+        santi_berat_kg <- 55
+            Ini sama tujuannya dengan perintah di atas, memasukkan data berupa angka 55 ke dalam variable bernama santi_berat_kg. Informasi variable tersebut adalah berat Santi 55 kg.
+
+        budi_berat_kg
+            Menampilkan isi data dari nama variable budi_berat_kg.
+
+        [1] 68
+            Menampilkan angka 68 – yang merupakan isi dari variable budi_berat_kg.
+
+        santi_berat_kg
+            Menampilkan isi data dari nama variable santi_berat_kg.
+
+        [1] 55
+            Menampilkan angka 55 – yang merupakan isi dari variable santi_berat_kg.
+
+    Tugas
+        Lanjutkan penambahan code pada code editor dengan dua perintah berikut.
+
+        Buat satu variable dengan nama pi dan isilah dengan nilai 3.14
+        Tampilkan isi variable pi.
+
+        Jalankan dan jika muncul hasil sebagai berikut, klik tombol  (submit) untuk mengirimkan code ke sistem DQLab dan melakukan scoring apakah code Anda sudah benar atau tidak.
+
+            > budi_berat_kg <- 68
+
+            > santi_berat_kg <- 54.5
+
+            > budi_berat_kg
+            [1] 68
+
+            > santi_berat_kg
+            [1] 54.5
+
+            > pi <- 3.14
+
+            > pi
+            [1] 3.14
+
+
+
+Comment pada R
+    Comment atau komentar adalah teks yang bisa dimasukkan di R, tapi tidak dianggap sebagai code yang bisa dieksekusi. Comment ini biasanya digunakan sebagai catatan untuk menjelaskan potongan code yang ada. Membuat comment sangat mudah. Caranya adalah menuliskan tanda pagar (#) yang kemudian diikuti dengan tulisan apapun.
+
+    Berikut adalah contoh perhitungan matematika yang diikuti oleh sebuah comment. 
+
+        2 + 2 #Ini adalah baris komentar
+
+    Ketik contoh tersebut dan jika berjalan dengan lancar maka Anda akan mendapatkan hasil berikut.
+
+        > 2 + 2 #Ini adalah baris komentar
+        [1] 4
+
+    Perhatikan bahwa comment "Ini adalah baris komentar" tidak dimengerti oleh R dan tidak menghasilkan apapun. Hal yang berbeda dengan perhitungan "2 + 2" yang tetap menghasilkan output angka 4.
+
+    Sebagai praktek, tambahkan komentar "Ini adalah komentar penutup" pada code editor. Jalankan dan klik tombol  (submit) untuk mengirimkan hasil dan melangkah ke bagian berikutnya.
+
+    Catatan: huruf besar dan huruf kecil berpengaruh pada saat submit code.
+
+
+
+Kesimpulan
+    Selamat, Anda telah menyelesaikan bab pertama mengenai apa itu R, hubungan dengan data science dan kenapa data scientist menggunakannya sebagai alat bantu utama.
+
+    Selain itu, Anda juga telah menguasai keterampilan dasar R dengan beberapa praktek berikut:
+
+        1. Mengolah dan menampilkan data dengan perintah print ataupun mengetikkan langsung data tersebut.
+        2. Melakukan perhitungan matematika.
+        3. Memberikan komentar atau comment untuk memberi penjelasan pada code di R.
+        4. Menyimpan angka, teks dan hasil perhitungan ke dalam variable - sehingga dapat digunakan pada bagian code lain.
+        5. Menjelaskan sifat R yang case sensitive - huruf besar dan huruf kecil adalah berbeda.
