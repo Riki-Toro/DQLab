@@ -11,6 +11,7 @@ Pendahuluan
         6. Sertifikat pencapaian dari PHI-Integration dan Universitas Multimedia Nusantara (Kompas Group).
 
 
+
 Jadi, apa itu R?
     R adalah nama sebuah bahasa pemrograman sekaligus software untuk pengolahan data dan grafik. R sangat popular saat ini karena memiliki jumlah fitur yang sangat besar - mencapai puluhan ribu fitur. Mulai dari membaca file teks, membaca database, menghasilkan berbagai grafik, menghasilkan dashboard yang menarik, sampai ke penggunaan machine learning - semuanya tersedia di R. Selain itu, R bersifat gratis dan open source. Artinya, dengan R kita tidak perlu biaya lisensi macam-macam untuk menggunakannya secara bebas dan luas.
 
@@ -19,6 +20,7 @@ Jadi, apa itu R?
     Dunia saat ini penuh dengan data, akibat meluasnya penggunaan aplikasi smartphone dan juga pemakaian sistem pada seluruh perusahaan. Namun data-data ini belum tentu menjadi informasi yang dibutuhkan oleh organisasi dan bisnis bila tidak bisa diolah dengan baik. Sekarang muncul sebuah disiplin ilmu untuk menjawab permasalahan tersebut, ilmu yang mempelajari bagaimana mengolah data menjadi informasi yang berguna, yaitu data science.
 
     Seseorang yang bekerja dengan dibekali ilmu data science dinamakan data scientist - saat ini merupakan salah satu profesi paling hot menurut LinkedIn. Untuk membantu pekerjaannya, data scientist perlu dibekali dengan aplikasi yang bagus - R dengan segala kekayaan adalah jawabannya.
+
 
 
 Kenapa Data Scientist menggunakan R?
@@ -36,3 +38,70 @@ Kenapa Data Scientist menggunakan R?
         4. Telah terbukti (Proven): R sudah digunakan oleh banyak data scientist perusahaan besar seperti Anz, Uber, dan Facebook dan memberikan solusi riil. Tidak heran jika akhirnya dari kisah sukses ini, banyak lowongan data scientist mencamtumkan R sebagai syarat keterampilan yang harus dimiliki.
 
     Berbekal alasan-alasan tersebut, kami yakin Anda akan lebih percaya diri dengan membekali diri belajar R!
+
+
+
+Code Pertama, Hello World!
+    Mari kita langsung praktek dengan halaman Live Code Editor ini:
+
+    Cobalah ketik teks atau code "Hello World" pada bagian panel Code Editor persis di bawah bagian lesson ini.
+    Jalankan dengan menekan tombol  .
+    
+        > "Hello World"
+        [1] "Hello World" 
+
+    Sekarang mari kita tambahkan perintah berupa perhitungan matematika, ketik 1+5 di bawah "Hello World".
+
+        > "Hello World"
+        [1] "Hello World"
+
+        > 1+5
+        [1] 6
+
+    Terlihat perhitungan 1 + 5 menghasilkan angka 6. Nah, begitulah kira-kira R menjalankan programnya.
+
+
+
+Teks, Angka dan Rumus Perhitungan
+    R merupakan bahasa yang berisi berbagai perintah, dari perintah melakukan perhitungan matematika sederhana sampai menghasilkan grafik.
+
+    Perintah ini bisa sangat singkat, hanya berisi angka atau teks saja. Sebagai contoh, cobalah ketik angka 9 dan teks "Budi" berikut pada Code Editor.
+
+        > 9 
+        [1] 9 
+        > "Budi" 
+        [1] "Budi"
+
+    > | Prompt dari R, adalah tanda dari R untuk menerima input perintah
+    9 | Menampilkan angka 9
+    [1] | Menunjukkan posisi urutan dari hasil output pertama. Kebetulan disini output hanya ada satu item, yaitu angka 9 – jadi posisinya otomatis adalah 1.
+    "Budi" | Menampikan teks Budi
+    [1] | Menunjukkan posisi urutan dari hasil output kedua. Kebetulan disini output hanya ada satu item, yaitu teks "Budi" – jadi posisinya otomatis adalah 1.
+
+        > 9 * 3
+        [1] 27
+
+    > | Prompt dari R
+    9 * 3 | Perintah untuk melakukan perkalian angka 9 dan 3
+    [1] | Menunjukkan posisi urutan dari hasil output pertama. Kebetulan disini output hanya ada satu item, yaitu angka 27 – jadi posisinya otomatis adalah 1.
+    27 | Hasil output.
+
+
+
+Menampilkan dengan Fungsi Print
+    Pada praktek sebelumnya kita bisa menampilkan teks dan angka dengan menuliskannya secara langsung, tapi akan lebih baik apabila kita menggunakan fungsi bernama print.
+
+    Mari kita ketik dua perintah print berikut pada code editor.
+
+        print("Hello World")
+        print(3 + 4)
+
+    Jika dijalankan akan muncul hasil berikut.
+
+        > print("Hello World")
+        [1] "Hello World"
+
+        > print(3 + 4)
+        [1] 7
+
+    Dengan demikian, hasilnya akan sama apabila kita langsung mengetikkan teks ataupun formula tersebut. Klik tombol Submit Code untuk melanjutkan ke bagian berikutnya.
