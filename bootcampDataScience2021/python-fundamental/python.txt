@@ -1,0 +1,17 @@
+Pendahuluan Tentang Python
+    Python merupakan bahasa pemrograman yag diciptakan pada tahun 1991 oleh Guido van Russom, seorang matematikawan.
+
+    Python mulai beranjak naik dan populer. Pada beberapa survey terkait bahasa pemrograman yang sering dicari di google, Python berhasil melonjak tajam bahkan mengungguli Java. Bahkan dari insight developer survey dari stackoverflow pada tahun 2018, Python berhasil naik pada TOP 10 programming language yang paling dicari menggungguli seniornya, C, PHP, dan C#. Python merupakan programming language yang memiliki peningkatan pencarian yang sangat tajam dalam setahun terakhir. Python mengklaim dirinya adalah programming language dengan perkembangan tercepat. Selain dari perkembangan library yang semakin kuat, kontributor dari python juga sangat banyak yang akhirnya membuat python menjadi salah satu programming language yang solid dan berkembang pesat.
+
+    Python sendiri berguna dalam berbagai aspek :
+
+        Web Development (Server – Side)
+        Software Development
+        Mathematics
+        Scripting
+        Data Science
+        Bisa mengelola Big Data dan Rumus matematika yang complex
+        Cocok untuk riset dan rapid prototype suatu product dan launch hingga produksi
+        CRUD sebuah file dan database
+
+    Kepopuleran python sendiri sekarang ada pada track data science. Banyaknya library dan framework seperti scikit-learn dan tensorflow membuat para pecinta data mining, AI, dan Machine learning menyukai python dalam pengembangan riset dan penelitian mereka. Berkembangnya dunia data science didunia ini juga salah satu alasan kenapa python menjadi begitu populer sekarang.
