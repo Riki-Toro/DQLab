@@ -86,3 +86,72 @@ List
 
         $luas_km2
         [1] 199.3
+
+
+
+
+List Index
+    Untuk mengambil isi list, kita bisa mengambil dari posisi index-nya, ketentuan dan caranya sama persis dengan vector.
+
+    Contoh: Untuk mengambil posisi kedua dari variable list list_saya kita bisa gunakan
+
+        list_saya[2]
+
+    atau
+
+        list_saya[[2]].
+
+    Panel code editor telah dilengkapi rangkaian contoh code untuk list dan cara akses indeksnya beserta penjelasan dalam bentuk comment. Jalankan dengan tombol untuk melihat hasilnya.
+
+    Tugas
+
+    Buatlah variable dengan nama list_satu dengan isi angka 1, character “Online”, dan nilai logical TRUE. Tampilkan index pertama dari list tersebut dengan accessor kurung siku tunggal.
+
+    Klik tombol  (submit) untuk mengirimkan code ke sistem DQLab dan melakukan scoring apakah code Anda sudah benar atau tidak.
+
+        # Membentuk list dengan 2 angka dan 1 character
+        list_saya <- list(2, "Budi", 4)
+
+        # Menampilkan index kedua dengan aksesor kurung siku tunggal 
+        list_saya[2]
+
+        # Menampilkan index kedua dengan aksesor kurung siku ganda
+        list_saya[[2]]
+
+        # Menampilkan index kedua s/d ketiga
+        list_saya[2:3]
+
+
+        list_satu <- list(1, "Online", TRUE)
+
+        list_satu[1]
+
+    output : 
+
+        > # Membentuk list dengan 2 angka dan 1 character
+        > list_saya <- list(2, "Budi", 4)
+
+        > # Menampilkan index kedua dengan aksesor kurung siku tunggal 
+        > list_saya[2]
+        [[1]]
+        [1] "Budi"
+
+
+        > # Menampilkan index kedua dengan aksesor kurung siku ganda
+        > list_saya[[2]]
+        [1] "Budi"
+
+        > # Menampilkan index kedua s/d ketiga
+        > list_saya[2:3]
+        [[1]]
+        [1] "Budi"
+
+        [[2]]
+        [1] 4
+
+
+        > list_satu <- list(1, "Online", TRUE)
+
+        > list_satu[1]
+        [[1]]
+        [1] 1
