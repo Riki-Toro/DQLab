@@ -1,0 +1,38 @@
+Pendahuluan
+    Course "R Fundamental for Data Science" ini adalah course pembuka DQLab untuk topik pengolahan data menggunakan R. 
+
+    Dengan durasi singkat, 15 menit. Anda akan mempelajari dan mendapatkan hal-hal berikut pada course ini:
+
+        1. Mengerti apa dan kenapa R digunakan oleh para data scientist dan dicari oleh perusahaan besar dunia.
+        2. Menguasai dasar bahasa R seperti penggunaan teks, angka, dan rumus.
+        3. Menguasai penggunaan tipe data fundamental R.
+        4. Mengerti bagaimana membaca file Excel.
+        5. Mengenali bagaimana grafik dihasilkan di R.
+        6. Sertifikat pencapaian dari PHI-Integration dan Universitas Multimedia Nusantara (Kompas Group).
+
+
+Jadi, apa itu R?
+    R adalah nama sebuah bahasa pemrograman sekaligus software untuk pengolahan data dan grafik. R sangat popular saat ini karena memiliki jumlah fitur yang sangat besar - mencapai puluhan ribu fitur. Mulai dari membaca file teks, membaca database, menghasilkan berbagai grafik, menghasilkan dashboard yang menarik, sampai ke penggunaan machine learning - semuanya tersedia di R. Selain itu, R bersifat gratis dan open source. Artinya, dengan R kita tidak perlu biaya lisensi macam-macam untuk menggunakannya secara bebas dan luas.
+
+    Data Scientist dan R
+
+    Dunia saat ini penuh dengan data, akibat meluasnya penggunaan aplikasi smartphone dan juga pemakaian sistem pada seluruh perusahaan. Namun data-data ini belum tentu menjadi informasi yang dibutuhkan oleh organisasi dan bisnis bila tidak bisa diolah dengan baik. Sekarang muncul sebuah disiplin ilmu untuk menjawab permasalahan tersebut, ilmu yang mempelajari bagaimana mengolah data menjadi informasi yang berguna, yaitu data science.
+
+    Seseorang yang bekerja dengan dibekali ilmu data science dinamakan data scientist - saat ini merupakan salah satu profesi paling hot menurut LinkedIn. Untuk membantu pekerjaannya, data scientist perlu dibekali dengan aplikasi yang bagus - R dengan segala kekayaan adalah jawabannya.
+
+
+Kenapa Data Scientist menggunakan R?
+    Apa sebenarnya yang membuat para data scientist tertarik belajar dan menggunakan R?
+
+    Ada empat alasan utama, yaitu:
+
+        1. Lebih Mudah Dipelajari (Easier): R relatif lebih mudah dipelajari dibandingkan dengan bahasa lain, seperti Java, C#, Javascript, dan lain-lain.
+
+        2. Lebih Cepat (Faster): Banyak fungsi R memberikan hasil jauh lebih cepat dibandingkan dengan aplikasi lain.
+        Contoh: R dapat menghasilkan berbagai visualisasi yang menarik dalam waktu singkat, sehingga data scientist dapat jauh lebih produktif dalam memahami data dan menghasilkan informasi.
+
+        3. Lebih kaya fitur (Richer): Dengan puluhan ribu fitur yang terus berkembang, hampir semua permasalahan data dapat dijawab oleh R. Sebagai contoh, untuk mengatasi permasalahan optimasi stok di e-commerce, R memiliki fungsi menghasilkan rekomendasi product packaging.
+
+        4. Telah terbukti (Proven): R sudah digunakan oleh banyak data scientist perusahaan besar seperti Anz, Uber, dan Facebook dan memberikan solusi riil. Tidak heran jika akhirnya dari kisah sukses ini, banyak lowongan data scientist mencamtumkan R sebagai syarat keterampilan yang harus dimiliki.
+
+    Berbekal alasan-alasan tersebut, kami yakin Anda akan lebih percaya diri dengan membekali diri belajar R!
