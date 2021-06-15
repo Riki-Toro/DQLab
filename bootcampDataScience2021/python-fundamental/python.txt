@@ -15,3 +15,95 @@ Pendahuluan Tentang Python
         CRUD sebuah file dan database
 
     Kepopuleran python sendiri sekarang ada pada track data science. Banyaknya library dan framework seperti scikit-learn dan tensorflow membuat para pecinta data mining, AI, dan Machine learning menyukai python dalam pengembangan riset dan penelitian mereka. Berkembangnya dunia data science didunia ini juga salah satu alasan kenapa python menjadi begitu populer sekarang.
+
+
+
+Mengapa Python Populer
+    Selain aspek dari meningkatnya minat masyarakat dunia terhadap data science, ada banyak hal yang membuat Python populer. Python merupakan salah satu programming language yang cocok untuk scripting dan bisa bergerak dalam berbagai platform OS dan IoT. Python sangat mirip English language. Meskipun tergolong sebagai high level programming language, python sangat mudah dimengerti karena syntaxnya yang sederhana. Python bisa bergerak dalam dalam berbagai fungsional programming dan OOP.  Python berjalan pada intepreter system, artinya code yang sudah ditulis bisa dijalankan sesegera mungkin.
+
+    Beberapa hal yang mungkin kelebihan dari python:
+
+        1. Python dirancang untuk mudah dibaca, dan memiliki beberapa kesamaan dengan bahasa Inggris dengan pengaruh dari matematika.
+        2. Python menggunakan baris baru untuk mengakhiri perintah, dibandingkan dengan bahasa pemrograman lain yang sering menggunakan titik koma atau tanda kurung.
+        3. Python bergantung pada indentasi, menggunakan spasi, untuk mendefinisikan ruang lingkup; seperti lingkup loop, fungsi, dan kelas. Bahasa pemrograman lainnya sering menggunakan kurung kurawal untuk tujuan ini
+        4. Jika kalian mencari di internet tentang programming python, biasanya akan ada 2 jenis python, python 2 dan python 3. versi utama Python yang paling baru adalah Python 3, yang akan kami gunakan dalam platform ini. Meskipun begitu, Python 2. Python 2 masih banyak digunakan karena versi python2 ini dianggap sudah stable dan masih bisa digunakan untuk production level. Berbeda dengan python3 yang masih berkembang terus menerus.
+
+
+
+Code Hello World
+    Struktur code pada Python relatif sangat sederhana dan tidak terlalu rumit seperti pada Java ataupun C. Selain karena memang mudah dibaca, python juga termasuk pada high level programming language. Sebagai contoh, cobalah ketik coding pada Code Editor dengan perintah berikut untuk mengeluarkan kata-kata yang diperintahkan.
+
+        print ("Hello World")
+
+    Hasil pada panel console akan keluar seperti berikut :
+
+        Hello World
+
+    Coba lanjutkan code tersebut pada baris selanjutnya dengan menggunakan kode ini :
+
+        print ("Hello World")
+        print(5+1)
+
+    Hasil pada panel console akan keluar seperti berikut :
+
+        Hello World
+        6
+
+    Note : setiap print akan mencetak baris baru.
+
+    Memang terlihat sangat sederhana jika hanya untuk kasus sederhana yang kita pelajari pada section kali ini. Namun, python tidak sesederhana itu. Biasanya kita juga menggunakan import library khusus jika sudah menyangkut masalah yang lebih kompleks. Next section mungkin akan menjelaskan lebih lanjut.
+
+
+    Tugas Praktek
+    Tampilkan hasil perhitungan (10*2+5) pada baris pertama.
+    tampilkan teks "Academy DQLab" pada baris kedua.
+    Klik tombol  untuk melanjutkan.
+
+    code: 
+
+        print("Hello World")
+        print(5+1)
+
+        print(10*2+5)
+        print("Academy DQLab")
+
+    output: 
+
+        Hello World
+        6
+        25
+        Academy DQLab
+
+
+
+
+Melakukan Comment Pada Python
+    Pada suatu kegiatan membuat code, penting sekali bagi para penulis codenya untuk memberikan sebuah dokumentasi pada penulisan codenya. Mengapa hal itu sangat penting? Sederhana, jika codenya sudah lebih dari ribuan baris dan ada beberapa bagian yang perlu diperbaiki karena suatu perubahan, para penulis code cukup melihat dokumentasinya dan tidak perlu membaca dan memahami seluruh isi code dari awal. Nah, salah satu metode yang biasa digunakan adalah menggunakan comment. Sama dengan Bahasa R, python juga menggunakan tanda “#” untuk melakukan comment pada script.
+
+    Cobalah ketikkan sebuah kalimat seperti di bawah ini beserta commentnya.
+
+        print("Ini adalah sebuah baris kode")#ini adalah contoh comment dan tidak akan tercetak
+
+    Klik tombol  maka akan keluar hasil seperti ini:
+
+        Ini adalah sebuah baris kode
+
+    Perlu diketahui, comment tidak akan pernah tampil pada hasil melalui console atau GUI. Fungsi comment bisa dikatakan sebagai penanda. Kenapa bab ini diberikan diawal? Harapannya dengan pengetahuan ini setiap kali Anda membuat baris code, bisa diberikan dokumentasi. Dokumentasi sangat penting untuk pengembangan suatu code apabila memang nanti diperlukan.
+
+    Dokumentasi kode juga berlaku untuk variable. Sangat penting mengetahui bahwa setiap variable berfungsi sebagai apa dan isinya apa. Maka dari itu jangan lupa untuk membuat dan memberi comment untuk setiap materi dqlab!
+
+    
+    Tugas Praktek
+    Berikan keterangan untuk setiap baris program dengan perintah comment:
+    print(10*2+5) #fungsi matematika
+    print("Academy DQLab") #fungsi mencetak kalimat
+
+    code: 
+
+        print(10*2+5) #fungsi matematika
+        print("Academy DQLab") #fungsi mencetak kalimat
+
+    output: 
+
+        25
+        Academy DQLab
