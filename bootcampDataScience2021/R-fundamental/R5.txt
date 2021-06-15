@@ -1,0 +1,150 @@
+Index dan Accessor pada Vector
+    Pada latihan sebelumnya kita sudah mengerti cara membuat vector untuk angka dan teks, namun belum ditunjukkan cara untuk mengambil tiap nilai dari vector tersebut. Perhatikan pada live code editor telah terisi code-code yang dapat Anda praktekkan sambil melihat penjelasan di bawah ini.
+
+    Untuk mengambil isi vector, kita harus mengambil dari posisinya. Posisi ini diwakili oleh angka urutan – yang disebut sebagai index.
+    Cara penulisan index di variable adalah angka yang diapit dengan kurung siku tunggal atau ganda. Penulisan ini selanjutnya disebut sebagai accessor.
+    Jika index yang ingin diambil lebih dari satu, maka hanya boleh menggunakan kurung siku tunggal.
+    Mari kita langsung contohkan agar lebih jelas. Pada code editor kita telah membuat suatu variable vector angka dengan isi berupa angka numerik 20 sampai dengan 30.
+
+        angka <- c(20:30)
+    
+    yang jika ditampilkan akan terlihat sebagai berikut - cobalah jalankan code untuk mendapatkan hasil ini.
+
+        > print(angka)
+        [1] 20 21 22 23 24 25 26 27 28 29 30
+
+    Terlihat nilai dari urutan ketiga pada vector angka ini adalah angka 22, bagaimana kita mengambil nilai ini? Seperti petunjuk di atas, kita bisa gunakan accessor dan index dengan perintah berikut.
+
+        print(angka[3])
+
+    Cobalah ketik perintah tersebut di bawah comment "# Tampilkan isi variable angka pada posisi ke 3", dan jalankan code dengan tombol Run. Jika berjalan dengan lancar maka akan tampil hasil sebagai berikut.
+
+        > print(angka[3])
+        [1] 22
+
+    Kita juga bisa mengambil urutan indeks dengan menggunakan accessor dengan format kurung siku ganda sebagai berikut.
+
+        print(angka[[5]])
+
+    Jika berjalan dengan lancar, maka hasilnya tampak sebagai berikut.
+
+        > print(angka[[5]])
+        [1] 24
+
+    Bagaimana dengan indeks angka lebih dari satu dan berurutan, misalkan saya ingin mengambil posisi keempat, kelima dan keenam dan menampilkannya?
+
+    Berikut adalah perintah yang perlu Anda ketikkan - dengan indeks menggunakan operator titik dua (:).
+
+        print(angka[4:6])
+
+    Tambahkan perintah tersebut di bawah comment "# Tampilkan isi variable angka pada posisi ke 4 s/d 6" dan jalankan. Jika berhasil maka akan keluar output berikut ini.
+
+        > print(angka[4:6])
+        [1] 23 24 25
+        
+    Sekarang kita coba beralih ke vector teks. Buatlah variable dengan nama kode_prodi dengan isi "DKV","ILKOM", dan "ICT" pada code editor - di bawah comment "# Buat vector teks dengan nama kode_prodi yang diisi sesuai petunjuk soal".
+
+        kode_prodi <- c("DKV","ILKOM","ICT")
+
+    Jangan jalankan dulu, cobalah Anda ketik sendiri perintah untuk menampilkan nilai urutan ketiga pada variable kode_prodi ini di bawah comment "# Tampilkan isi indeks ketiga dari kode_prodi" .
+
+        > # Buat vector variable bernama angka yang isinya 20 s/d 30
+        > angka <- c(20:30)
+
+        > print(angka)
+        [1] 20 21 22 23 24 25 26 27 28 29 30
+
+        > # Tampilkan isi variable angka pada posisi ke 3
+        > print(angka[3])
+        [1] 22
+
+        > # Tampilkan isi variable angka pada posisi ke 5 gunakan kurung siku ganda
+        > print(angka[[5]])
+        [1] 24
+
+        > # Tampilkan isi variable angka pada posisi ke 4 s/d 6
+        > print(angka[4:6])
+        [1] 23 24 25
+
+        > # Buat vector teks dengan nama kode_prodi yang diisi sesuai petunjuk soal
+        > kode_prodi <- c("DKV","ILKOM","ICT")
+
+        > # Tampilkan isi indeks ketiga dari kode_prodi
+        > print(kode_prodi[3])
+        [1] "ICT"
+
+
+
+Named Vector
+    Selain dengan angka, indeks pada vector juga dapat dilengkapi dengan nama untuk tiap elemennya dengan menggunakan format penulisan name=value. 
+
+    Mari kita langsung praktekkan dengan contoh, ketik named vector berikut - dimana kita membuat vector angka dengan tiap urutan diberi nama. 
+
+        nilai <- c(statistik = 89, fisika = 95, ilmukomunikasi = 100)
+
+    Dengan mudah Anda mungkin bisa melihat bahwa vector ini mewakili nilai-nilai untuk mata kuliah "statistik", "fisika" dan "ilmukomunikasi". 
+
+    Code untuk membuat dan menampilkan named vector ini telah ada pada code editor. Jalankan dan jika berhasil, maka akan muncul output berikut.
+
+        > print(nilai)
+            statistik         fisika ilmukomunikasi 
+                    89             95            100 
+                    
+    Perhatikan terdapat perbedaan tampilan output named vector ini dengan tampilan output vector sebelumnya - yaitu sudah tidak ada awalan [1].
+
+    Nah, sekarang kita akan mengambil dan menampilkan nilai pada vector untuk nama "fisika". 
+
+        print(nilai["fisika"])
+
+    Ketikkan perintah tersebut di bawah comment "#Menampilkan isi dengan nama fisika" dan jalankan. Hasil yang Anda dapatkan harusnya sebagai berikut.
+
+        > print(nilai["fisika"])
+        fisika 
+            95 
+
+    Bagaimana, cukup jelas?
+
+    Sebagai latihan sehingga Anda benar-benar menguasai bahan named vector ini, cobalah buat variable named vector profil dengan input berikut:
+
+        nama = "Budi"
+        tempat_tinggal = "Jakarta"
+        tingkat_pendidikan = "S1"
+
+    Kemudian tampilkan variable profil ini dengan menggunakan fungsi print.
+
+
+        #Membuat named vector dengan nama nilai
+        nilai <- c(statistik = 89, fisika = 95, ilmukomunikasi = 100)
+
+        #Menampilkan isi variable nilai
+        print(nilai)
+
+        #Menampilkan isi dengan nama fisika
+        print(nilai["fisika"])
+        #Buat variable profil sesuai permintaan soal
+        profil <- c(nama = "Budi", tempat_tinggal = "Jakarta", tingkat_pendidikan = "S1")
+        #Tampilkan variable profil
+        print(profil)
+
+    output: 
+
+        > #Membuat named vector dengan nama nilai
+        > nilai <- c(statistik = 89, fisika = 95, ilmukomunikasi = 100)
+
+        > #Menampilkan isi variable nilai
+        > print(nilai)
+            statistik         fisika ilmukomunikasi 
+                    89             95            100 
+
+        > #Menampilkan isi dengan nama fisika
+        > print(nilai["fisika"])
+        fisika 
+            95 
+
+        > #Buat variable profil sesuai permintaan soal
+        > profil <- c(nama = "Budi", tempat_tinggal = "Jakarta", tingkat_pendidikan = "S1")
+
+        > #Tampilkan variable profil
+        > print(profil)
+                    nama     tempat_tinggal tingkat_pendidikan 
+                    "Budi"          "Jakarta"               "S1" 

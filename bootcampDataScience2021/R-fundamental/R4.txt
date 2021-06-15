@@ -1,0 +1,96 @@
+Pendahuluan
+    Dengan berbekal teori dan praktek sebelumnya, sekarang kita telah siap untuk mengenal tipe data dan operasi data yang lebih berguna pada kasus nyata, misalkan untuk dapat ditampilkan dengan bermacam komposisi grafik yang menarik.
+
+    Untuk mencapai hal ini kita perlu mengenal tiga tipe data yang paling sering digunakan di R, yaitu vector, list dan data frame.
+
+    Kita akan belajar konsep dan praktek detil untuk mengenali semuanya dengan lebih baik.
+
+    Khusus untuk data frame akan dicontohkan dengan fungsi pembacaan file teks, sehingga Anda akan mendapatkan pengalaman yang lebih nyata kenapa harus menggunakan tipe data ini pada praktek sehari-hari.
+
+
+
+Vector
+    Vector adalah jenis data di R dengan struktur yang menyimpan deretan nilai (lebih dari satu nilai) dengan tipe data sama. Jadi, jika tipe datanya teks maka seluruh data harus bertipe teks. Demikian juga jika tipenya angka maka seluruh data angka semua.
+
+    Vector didefinisikan dengan nama function yang memilki satu huruf saja: c. Sebagai contoh untuk membuat vector yang isinya angka dengan nilai 2, 5, dan 7, maka perintahnya adalah c(2, 5, 7).
+
+    Cobalah ketik perintah tersebut di bagian bawah komentar "Ini adalah contoh vector untuk angka numerik dengan 3 data c(4, 5, 6)" sehingga tampilan code editor tampak sebagai berikut.
+
+        # Ini adalah contoh vector untuk angka numerik dengan 3 data c(4, 5, 6)
+        c(4,5,6)
+
+    output:
+
+        > # Ini adalah contoh vector untuk angka numerik dengan 3 data c(4, 5, 6)
+        > c(4,5,6)
+        [1] 4 5 6
+
+    Ini artinya Anda telah membuat dan menambilkan sebuah vector yang berisi tiga 3 angka: 4, 5 dan 6. Terlihat tiga angka tersebut semua ditampilkan dalam satu baris.
+
+    Sekarang kita akan simpan vector ini ke dalam variable angka dan ditampilkan bukan dengan menggunakan fungsi print pada bagian bawah comment "# Variable bernama angka dengan input berupa vector".
+
+        # Ini adalah contoh vector untuk angka numerik dengan 3 data c(4, 5, 6)
+        c(4,5,6)
+        # Variable bernama angka dengan input berupa vector
+        angka <- c(4,5,6)
+        # Tampilkan isi variable angka dengan fungsi print
+        print(angka)
+
+    output :
+
+        > # Ini adalah contoh vector untuk angka numerik dengan 3 data c(4, 5, 6)
+        > c(4,5,6)
+        [1] 4 5 6
+
+        > # Variable bernama angka dengan input berupa vector
+        > angka <- c(4,5,6)
+
+        > # Tampilkan isi variable angka dengan fungsi print
+        > print(angka)
+        [1] 4 5 6
+
+
+
+Deretan Nilai dengan Operator :
+    Operator : atau titik dua adalah operator yang digunakan untuk mempersingkat penulisan dari nilai-nilai vector yang berurutan. Sebagai contoh, perintah c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10) yang membentuk vector dengan angka 1 sampai dengan 10 dapat dipersingkat dengan c(1:10).
+
+    Ketiklah empat perintah berikut pada code editor, dimana variable angka1 diisi dengan vector dengan penulisan angka berurutan yang panjang. Dan variable angka2 diisi dengan menggunakan operator :.
+
+        angka1 <- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+        print(angka1)
+        angka2 <- c(1:10)
+        print(angka2)
+
+    Jalankan perintah tersebut, jika berhasil akan muncul tampilan sebagai berikut.
+
+        angka1 <- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+        > print(angka1)
+        [1]  1  2  3  4  5  6  7  8  9 10
+
+        > angka2 <- c(1:10)
+
+        > print(angka2)
+        [1]  1  2  3  4  5  6  7  8  9 10
+
+    Terlihat walaupun diisi dengan cara berbeda, tampilan isi dari kedua variable tersebut sama.
+
+
+
+Vector dengan Isi Teks
+    Selain angka, vector juga bisa diisi dengan teks. Cobalah ketik satu perintah pada code editor untuk membuat vector yang isinya tiga nama orang dan disimpan sebagai variable  nama_mahasiswa sebagai berikut. 
+
+        nama_mahasiswa <- c("Amira","Budi","Charlie")
+
+    Kemudian lanjutkan dengan perintah untuk menampilkan variable tersebut.
+
+        print(nama_mahasiswa)
+
+    Jika berhasil dijalankan dengan baik, kita akan memperoleh hasil seperti berikut.
+
+        > nama_mahasiswa <- c("Amira","Budi","Charlie")
+
+        > print(nama_mahasiswa)
+        [1] "Amira"   "Budi"    "Charlie"
+
+    Terlihat vector yang ditampilkan adalah urutan teks "Amira", "Budi", dan "Charlie". Ini menunjukkan bahwa vector bisa berisi teks selain angka.
