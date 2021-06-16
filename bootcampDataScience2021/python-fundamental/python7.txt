@@ -1,0 +1,39 @@
+Pendahuluan
+    Pada pembuatan program yang kompleks dan memiliki banyak fitur, kita diharuskan menggunakan fungsi. Kenapa memangnya kalau tidak menggunakan fungsi? Bisa jadi kita akan kerepotan menulis kode programnya, karena banyak yang harus ditulis dan kode akan menjadi sulit dibaca dan dirawat (maintenance). Dengan fungsi, kita dapat memecah program besar menjadi sub program yang lebih sederhana. Masing-masing fitur pada program dapat kita buat dalam satu fungsi. Pada saat kita membutuhkan fitur tersebut, kita tinggal panggil fungsinya saja.
+
+
+
+
+Membuat fungsi sendiri
+    Fungsi pada Python, dibuat dengan kata kunci def  kemudian diikuti dengan nama fungsinya.
+
+    Contoh :
+
+        def nama_fungsi():
+            print ("Hello ini Fungsi")
+    
+    Sama seperti blok kode yang lain, kita juga harus memberikan indentasi (tab atau spasi 2x) untuk menuliskan isi fungsi.
+
+    Cara untuk memanggil fungsinya cukup sederhana. Cukup seperti ini:
+
+        nama_fungsi()
+    
+
+    Sebagai contoh full code bisa Anda coba ketikkan code di bawah ini :
+
+        # Membuat Fungsi
+        def salam():
+            print("Hello, Selamat Pagi")
+
+
+
+        ## Pemanggilan Fungsi
+        salam()
+
+    Klik Run dan lihat hasil keluarannya.
+
+        Hello, Selamat Pagi 
+
+
+
+
