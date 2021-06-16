@@ -1,0 +1,64 @@
+Pendahuluan
+    Modul memungkinkan Anda mengatur kode Python secara logis. Mengelompokkan kode terkait ke dalam modul membuat kode lebih mudah dipahami dan digunakan. Modul adalah objek Python dengan atribut yang diberi nama yang bisa Anda tambahkan dan dijadikan referensi dalam membantu dalam proses pembuatan program. Secara sederhana, modul adalah file yang terdiri dari kode Python. Modul dapat mendefinisikan fungsi, kelas, dan variabel. Python sendiri sudah memiliki banyak library dan module yang bisa diakses oleh pengguna secara free.
+
+
+
+
+Import Package dan Menggunakan modul
+    Pada sesi kali ini, praktek akan menggunakan module math yang merupakan module standar untuk operasi matematika. Berikut ini contohnya :
+
+        import math
+
+    Cara menggunakan module cukup sederhana. Module sendiri berisi fungsi-fungsi. Cara orang melakukan akses kedalam fungsi juga berbeda. Coba lihat dan implementasikan kode di bawah ini :
+
+        import math
+        print("Nilai pi adalah:", math.pi)# math.pi merupakan sintak untuk memanggil fungsi
+
+    output :
+
+        Nilai pi adalah: 3.141592653589793
+
+
+
+
+Import dengan Module Rename atau Alias
+    Kita bisa mengimpor modul dengan menamainya. Hal ini biasanya kita lakukan untuk menyingkat nama modul yang panjang.
+
+        import math as m                #menggunakan m sebagai module rename atau alias
+        print("Nilai pi adalah:", m.pi) #m.pi merupakan sintak untuk memanggil fungsi​
+
+    output :
+
+        Nilai pi adalah: 3.141592653589793
+
+
+
+
+Import Sebagian Fungsi
+    Pada suatu module tidak bisa dipungkiri terdiri dari puluhan bahkan ribuan fungsi. Namun, yang kita butuhkan hanya 1 atau 2 fungsi saja. Untuk meminimalisir ketidakefisienan suatu program dalam load suatu module bisa dilakukan import module namun hanya beberapa fungsi saja yang kita import kedalam code. Format (from module_name import function_name)
+
+        from math import pi
+
+        print("Nilai pi adalah", pi)
+
+    output :
+
+        Nilai pi adalah 3.141592653589793
+
+
+
+
+Import Semua isi Moduls
+    Namun, jika memang yang dibutuhkan banyak, semisal lebih dari 10 atau bahkan ratusan fungsi, bisa dilakukan import semuanya dengan menggunakan format from module_name import *. Tanda * disini menunjukan semua fungsi diimport kedalam code.
+
+        from math import *
+
+        print("Nilai e adalah:", e)
+
+    output :
+
+        Nilai e adalah 2.718281828459045
+
+
+
+
