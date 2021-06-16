@@ -1,0 +1,97 @@
+Pendahuluan
+    Data Science tak akan lepas dari Matematika. Pada track python kali ini kita juga belajar berbagai macam operator matematika dalam python yang dapat membantu dalam belajar data science. Pada sesi kali ini, operator yang disajikan adalah operator operator dasar dan logika pada matematika. Pada dasarnya, setiap bahasa pemrograman akan memiliki operasi pengelolahan angka dan pembanding.
+
+    Operator yang akan kita bahas kali ini adalah :
+
+        Tambah | +
+
+        Kurang | -
+
+        Pembagi | /
+
+        Perkalian | *
+
+        Modulus | %
+
+        Kurang dari | < 
+
+        Lebih dari | > 
+
+        Kurang dari sama dengan | <=
+
+        Lebih dari sama dengan | >=
+
+        Sama dengan | =
+
+
+
+
+Praktek Operasi Matematika
+    Pada praktek ini kita akan mencoba semua operator matematika. Praktek pada sesi kali ini akan menekankan bagaimana menggunakan operator langsung diimplementasikan dengan variable.
+
+    Ketikan code di bawah ini pada editor:
+
+        a=10
+        b=5
+        selisih = a-b
+        jumlah = a+b
+        kali = a*b
+        bagi = a/b
+        print("Hasil penjumlahan a dan b adalah", jumlah)
+        print("Selisih a dan b adalah :",selisih)
+        print("Hasil perkalian a dan b adalah :",kali)
+        print("Hasil pembagian a dan b adalah:",bagi)
+
+    Klik tombol  maka akan keluar hasil seperti ini:
+
+        Hasil penjumlahan dan b adalah 15
+        Selisih a dan b adalah : 5
+        Hasil perkalian a dan b adalah : 50
+        Hasil pembagian a dan b adalah: 2.0
+
+
+
+
+Operasi modulus
+    Modulus memang jarang dipakai namun, dibeberapa kasus modulus sangat berguna untuk mempercepat proses perhitungan. Modulus sendiri merupakan fungsi yang akan menghitung sisa dari hasil pembagian. Untuk lebih jelasnya silahkan lakukan praktek di bawah ini :
+
+        c=10
+        d=5
+
+        modulus=c%d
+        print("Hasil modulus",modulus)
+
+    Klik tombol  maka akan keluar hasil seperti ini:
+
+        Hasil modulus 0
+
+    Coba ubah nilai d dari 5 menjadi 3. Lalu RUN lagi code tersebut. Maka pasti akan keluar hasil:
+
+        Hasil modulus 1
+
+    Kenapa bisa seperti itu? Prinsip modulus adalah dasarnya sebuah pembagian. Jika pembagi tidak bisa membagi habis angka yang dibagi maka. Fungsi modulus akan membagi hingga mendekati nilai yang dibagi namun tidak melebihi. Selisih dari angka yang mendekati dan angka yang dibagi nanti merupakan hasil modulus. Jika bisa dibagi habis seperti kasus pertama 10/5 maka modulus akan mengembalikan nilai 0.
+
+
+
+
+Tugas Mid Praktek
+    Buatlah sebuah program yang bisa menentukan suatu nilai pada variable itu genap atau ganjil! Lakukan percobaan dengan langkah berikut:
+
+    Buat variabel dengan nama “angka” isi dengan nilai 10
+    Ganti bagian … dengan perhitungan untuk menentukan angka modulus 2 bernilai 0.
+    Cek apakah benar dia bernilai genap maka keluarkan "angka termasuk bilangan genap", jika sudah ganti nilai variable angka dengan nilai 5 cek lagi apakah dia bernilai ganjil dan keluarkan "angka termasuk bilangan ganjil".
+
+    Note: Anda bisa menggunakan materi-materi sebelumnya dengan menggabungkannya di tugas praktek ini untuk membantu anda dalam mengerjakan.
+
+    code: 
+
+        angka=5
+
+        if(angka%2 == 0):
+            print("angka termasuk bilangan genap")
+        else:
+            print("angka termasuk bilangan ganjil")
+
+    output:
+
+        angka termasuk bilangan ganjil
