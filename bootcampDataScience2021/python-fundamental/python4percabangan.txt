@@ -1,0 +1,81 @@
+IF … ELIF … ELSE ….
+    Cobalah ketikkan kode seperti di bawah ini: 
+
+        i=5
+
+        if(i==5):
+            print("ini adalah angka 5")
+        elif(i>5):
+            print("lebih besar dari 5")
+        else:
+            print("lebih kecil dari 5")
+
+    Klik tombol  maka akan keluar hasil seperti ini:
+
+        ini adalah angka 5
+    
+    Coba modifikasi code sebelumnya dengan merubah nilai variable i menjadi 7, seperti code dibawah ini:
+
+        i=7
+
+        if(i==5):
+            print("ini adalah angka 5")
+        elif(i>5):
+            print("lebih besar dari 5")
+        else:
+            print("lebih kecil dari 5")
+
+    Klik tombol  maka akan keluar hasil seperti ini:
+
+        lebih besar dari 5
+
+    Penjelasan :
+        Nilai variable i tidak memenuhi dari kondisi pertama dimana ditanyakan apakah nilai i sama dengan 5. Lalu masuk pada pengecekan kedua variable i memenuhi. Dan akhirnya dicetak kondisi tersebut.
+
+    Ubah kembali nilai variable i menjadi 3.
+
+        i=3
+
+        if(i==5):
+            print("ini adalah angka 5")
+        elif(i>5):
+            print("lebih besar dari 5")
+        else:
+            print("lebih kecil dari 5")
+
+    Klik tombol  maka akan keluar hasil seperti ini:
+
+        lebih kecil dari 5
+
+    Penjelasan :
+        Nilai variable i tidak memenuhi dari kondisi pertama dimana ditanyakan apakah nilai i sama dengan 5. Lalu masuk pada pengecekan kedua variable i juga tidak memenuhi. Maka dari itu langsung masuk pada perintah ketiga karena kedua pengecekan awal tidak memenuhi.
+
+
+
+
+NESTED IF
+    Fungsi IF sendiri bisa digunakan secara bertingkat. Atau dilakukan pengecekan lebih dari 1 statement di dalamnya. Semisal seperti ini:
+
+        if ( i<7 && i <3)
+
+    dimana artinya i harus bernilai kurang dari 7 dan kurang dari 3 agar bisa memenuhi pengecekan tersebut.
+
+    
+    Tugas:
+    Ketiklah potongan code di bawah ini pada live code editor untuk melakukan pengecekan bertingkat
+
+        i = 2
+        if( i < 7 ):
+            print("nilai i kurang dari 7")
+            if( i < 3 ):
+                print("nilai i kurang dari 7 dan kurang dari 3")
+            else:
+                print("nilai i kurang dari 7 tapi lebih dari 3")
+
+    output:
+
+        nilai i kurang dari 7
+        nilai i kurang dari 7 tapi kurang dari 3
+
+    Pengecekan bertingkat ini kerap disebut sebagai nested IF.
+    
