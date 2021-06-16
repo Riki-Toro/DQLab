@@ -1,0 +1,72 @@
+Pendahuluan
+    Dalam membuat suatu keputusan biasanya pasti ada sebuah pilihan. Untuk mewujudkan suatu kerangka berpikir pada suatu pilihan pada bahasa pemrograman biasanya kita menggunakan konsep IF, ELSE. Pada python sebenarnya hampir sama dan tidak ada perbedaan yang terlalu signifikan. Perbedaanya mungkin ada pada
+
+    Pada praktek kali ini akan dibagi menjadi 3 bagian :
+
+        1. Menggunakan IF yang jika direpresentasikan dengan kata – kata, (Jika, sesuatu memenuhi suatu kondisi, maka lakukan A, jika tidak, tidak terjadi apa-apa)
+        2. Menggunakan IF dan ELSE yang jika direpresentasikan dengan kata – kata, (Jika, sesuatu memenuhi suatu kondisi, maka lakukan A, jika tidak, lakukan B)
+        3. Menggunakan IF, ELIF dan ELSE. ELIF sendiri sebenarnya sama persis dengan ELSE IF. Namun, pada python disingkat menjadi ELSE IF. (Jika, sesuatu memenuhi suatu kondisi, maka lakukan A, jika tidak, lakukan pengecekan pada kondisi berikutnya, jika memenuhi lakukan B, jika tidak maka lakukan C)
+
+    Pada praktek operator IF, ELIF dan ELSE ini akan sedikit berbeda dengan sebelumnya. Perlu banyak modifikasi code yang dilakukan agar pemahaman materi bisa sempurna. Maka dari itu mohon dibaca dengan teliti ya!
+
+
+
+
+IF Statement
+    Penggunaan IF sebenarnya adalah sebuah statement untuk menentukan keputusan mana yang akan diambil berdasarkan suatu kondisi yang ditentukan oleh pembuat program.
+
+    Cobalah ketikkan kode seperti di bawah ini :
+
+        i = 10 #inisialisasi variable i yang memiliki nilai 10
+
+        if(i==10): #pengecekan nilai i apakah sama dengan 10
+            print("ini adalah angka 10") #jika TRUE maka akan mencetak kalimat ini
+
+    Klik tombol  maka akan keluar hasil seperti ini:
+
+        ini adalah angka 10
+
+    Dengan mengunakan code yang sama, ubahlah nilai variable i menjadi 7.
+
+        i = 7 #inisialisasi variable i yang memiliki nilai 10
+
+        if(i==10): #pengecekan nilai i apakah sama dengan 10
+            print("ini adalah angka 10") #jika TRUE maka akan mencetak kalimat ini
+            
+    Klik tombol maka tidak ada hasil, karena nilai 7 tidak memenuhi syarat kondisi dalam IF. Karena tidak ada kelanjutan perintah maka program dihentikan dan tidak mengeluarkan hasil apapun.
+
+
+
+
+IF … ELSE …
+    Cobalah ketikkan kode seperti di bawah ini:
+
+        i = 10 #inisialisasi variable i yang memiliki nilai 10
+
+        if(i==10): #pengecekan nilai i apakah sama dengan 10
+            print("ini adalah angka 10") #jika TRUE maka akan mencetak kalimat ini
+        else:
+            print("bukan angka 10") #jika FALSE akan mencetak kalimat ini
+            
+    Klik tombol  maka akan keluar hasil seperti ini:
+
+        ini adalah angka 10
+
+    Penjelasan :
+        Variable i memenuhi syarat pada kondisi pertama. Yaitu nilai sama dengan 10. Maka dari itu variable i tidak perlu dicek kembali di kondisi kedua.
+
+    Dengan menggunakan code yang sama, coba ubah nilai varible i menjadi 5.
+
+        i = 5 #inisialisasi variable i yang memiliki nilai 10
+
+        if(i==10): #pengecekan nilai i apakah sama dengan 10
+            print("ini adalah angka 10") #jika TRUE maka akan mencetak kalimat ini
+        else:
+            print("bukan angka 10") #jika FALSE akan mencetak kalimat ini
+
+    Klik tombol  maka akan keluar hasil seperti ini:
+
+        bukan angka 10
+
+    Penjelasan:
+        Nilai variable adalah 5. Pada kondisi pertama variable i tidak memenuhi. Maka dari output yang diberikan adalah perintah pada else yang merupakan hasil apabila pengecekan pertama tidak sesuai.
