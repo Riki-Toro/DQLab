@@ -1,0 +1,69 @@
+Pendahuluan
+    Grafik merupakan salah satu perangkat visualisasi. Visualisasi sendiri sudah menjadi salah satu challenge atau poin penting dalam data science. Selain bisa mempermudah seseorang untuk memahami data, bagi para data scientist visualisasi bisa meningkatkan analisa atau memunculkan knowledge yang tidak sempat terekspose ketika tidak menggunakan visualisasi. Pada sesi kali ini, kita akan menggunakan matplotlib untuk melakukan visualisasi data yang sudah ada.
+
+
+
+
+Bar Chart
+    Sebelum masuk pada membuat grafik bar, kita akan membahas library yang akan gunakan. Pada Python sangat banyak library untuk visualisasi. Salah satu yang paling sering digunakan adalah matplotlib karena memang sudah lama dan relatif stabil dalam perkembangannya. Maka dari itu, matplotlib dipilih untuk belajar visualisasi pada sesi kali ini. Matplotlib sendiri menyediakan banyak jenis grafik mulai dari scatter/plot, line, bar, dan lain-lain. Pada praktek ini, ada tambahan library selain dengan menggunakan matplotlib dan pandas, kita akan menggunakan numpy. Numpy sendiri pada praktek kali ini digunakan untuk melakukan manipulasi data dari csv untuk memudahkan visualisasi.
+
+    Ketikan kode di bawah ini :
+
+        import pandas as pd
+        import numpy as np
+        import matplotlib.pyplot as plt
+
+        table = pd.read_csv("https://storage.googleapis.com/dqlab-dataset/penduduk_gender_head.csv")
+        table.head()
+        x_label = table['NAMA KELURAHAN']
+        plt.bar(x=np.arange(len(x_label)),height=table['LAKI-LAKI WNI'])
+        plt.show()
+
+
+
+
+Parameter dalam Grafik (Memberikan Nilai Axis dari data CSV)
+    Jika ditelisik lebih dalam pada CSV, disitu ada nama kelurahan yang merupakan variabel atau seharusnya menjadi nilai AXIS pada grafik ini. Di praktek kali ini, kita akan mencoba bagaimana menempatkan nama kelurahan pada grafik.
+
+        import pandas as pd
+        import numpy as np
+        import matplotlib.pyplot as plt
+
+        table = pd.read_csv("https://storage.googleapis.com/dqlab-dataset/penduduk_gender_head.csv")
+        table.head()
+
+        x_label = table['NAMA KELURAHAN']
+        plt.bar(x=np.arange(len(x_label)),height=table['LAKI-LAKI WNI'])
+        plt.xticks(np.arange(len(x_label)), table['NAMA KELURAHAN'], rotation=30)
+        plt.show()
+
+
+
+
+Menambah Title dan Label pada Grafik
+    Pada implementasi grafik, penting nyatanya untuk memberikan label pada AXIS dan Ordinat untuk menjelaskan maksud grafik. Pada Praktek kali ini, kita akan mencoba memberikan label dan title pada grafik yang telah dibuat sebelumnya.
+
+    Cobalah ketika kode di bawah ini :
+
+        import pandas as pd
+        import numpy as np
+        import matplotlib.pyplot as plt
+
+
+        table = pd.read_csv("https://storage.googleapis.com/dqlab-dataset/penduduk_gender_head.csv")
+        table.head()
+
+        x_label = table['NAMA KELURAHAN']
+        plt.bar(x=np.arange(len(x_label)),height=table['LAKI-LAKI WNI'])
+        plt.xticks(np.arange(len(x_label)), table['NAMA KELURAHAN'], rotation=90)
+        plt.xlabel('Keluarahan di Jakarta pusat')
+        plt.ylabel('Jumlah Penduduk Laki - Laki')
+        plt.title('Persebaran Jumlah Penduduk Laki- Laki di Jakarta Pusat')
+
+        plt.show()
+
+
+
+
+Penutup
+    Mudah bukan? Setelah mempelajari basic Python ini, diharapkan yang sudah mengerjakan bisa mengerti fundamental dari programming python. Sedikit rangkuman, memang course ini selain mengajarkan basic rule dari python kita juga sedikit memberikan logic course didalamnya. Kita tahu bahwa Data Science, AI, ataupun Machine Learning sangat identik dengan programming. Basic Programming adalah pemahaman logic yang kuat. Harapannya dengan dikuatkan pondasi dalam course ini ke depannya dalam menghadapi course lain yang ada. Sudah memiliki pondasi dan bekal yang kuat, next kita akan menyajikan bagaimana bermain dan mengelola data dengan Python pada course Data Wrangling with Python. See You!
