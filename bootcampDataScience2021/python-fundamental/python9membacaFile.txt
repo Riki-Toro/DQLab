@@ -1,0 +1,131 @@
+Pendahuluan
+    CSV atau comma separated value adalah salah satu tipe file yang digunakan secara luas di dunia programming. Tidak hanya itu CSV pun sering digunakan dalam pengolahan informasi yang dihasilkan spreadsheet untuk diproses lebih lanjut melalui mesin analitik. CSV pun dianggap sebagai file yang agnostik karena dapat digunakan oleh berbagai database untuk proses backup data. CSV dianggap sebagai salah satu tipe data yang sering dipakai untuk mengelola data pada proses lanjutan.
+
+
+
+
+Membaca Teks File (CSV)
+    Sekarang kita akan mencoba membaca sebuah file CSV yang telah dihasilkan aplikasi atau program lain. Di Python, hasil pembacaan setiap baris pada file CSV akan dikonversi menjadi list Python.
+
+    Berikut adalah contoh kode untuk membaca file CSV dengan kasus yang sangat sederhana, coba ketik kode di bawah ini pada Code Editor:
+
+        import csv
+
+        # tentukan lokasi file, nama file, dan inisialisasi csv
+        f = open('penduduk_gender_head.csv', 'r')
+        reader = csv.reader(f)
+
+        # membaca baris per baris
+        for row in reader:
+            print (row)
+
+        # menutup file csv
+        f.close()
+
+
+
+
+Membaca file CSV dengan menggunakan PANDAS
+    Bagi yang belum familiar, PANDAS merupakan salah satu library yang sangat sering digunakan untuk aplikasi dan implementasi data science. Baik untuk data manipulation, data pre-processing, atau data wrangling. Pada sesi kali ini, kita akan menggunakan PANDAS untuk membaca file dari csv.
+
+    Cobalah ketik code di bawah ini:
+
+        import pandas as pd
+
+        table = pd.read_csv("https://storage.googleapis.com/dqlab-dataset/penduduk_gender_head.csv")
+        table.head()
+        print(table)
+
+    Klik tombol  maka akan keluar hasil seperti ini:
+
+        TAHUN         NAMA PROVINSI NAMA KABUPATEN/KOTA NAMA KECAMATAN  \
+        0    2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT         GAMBIR
+        1    2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT         GAMBIR
+        2    2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT         GAMBIR
+        3    2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT         GAMBIR
+        4    2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT         GAMBIR
+        5    2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT         GAMBIR
+        6    2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT    SAWAH BESAR
+        7    2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT    SAWAH BESAR
+        8    2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT    SAWAH BESAR
+        9    2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT    SAWAH BESAR
+        10   2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT    SAWAH BESAR
+        11   2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT      KEMAYORAN
+        12   2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT      KEMAYORAN
+        13   2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT      KEMAYORAN
+        14   2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT      KEMAYORAN
+        15   2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT      KEMAYORAN
+        16   2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT      KEMAYORAN
+        17   2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT      KEMAYORAN
+        18   2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT      KEMAYORAN
+        19   2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT          SENEN
+        20   2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT          SENEN
+        21   2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT          SENEN
+        22   2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT          SENEN
+        23   2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT          SENEN
+        24   2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT          SENEN
+        25   2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT  CEMPAKA PUTIH
+        26   2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT  CEMPAKA PUTIH
+        27   2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT  CEMPAKA PUTIH
+        28   2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT        MENTENG
+        29   2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT        MENTENG
+        30   2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT        MENTENG
+        31   2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT        MENTENG
+        32   2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT        MENTENG
+        33   2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT    TANAH ABANG
+        34   2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT    TANAH ABANG
+        35   2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT    TANAH ABANG
+        36   2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT    TANAH ABANG
+        37   2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT    TANAH ABANG
+        38   2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT    TANAH ABANG
+        39   2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT    TANAH ABANG
+        40   2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT     JOHAR BARU
+        41   2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT     JOHAR BARU
+        42   2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT     JOHAR BARU
+        43   2013  PROVINSI DKI JAKARTA       JAKARTA PUSAT     JOHAR BARU
+
+                NAMA KELURAHAN  LAKI-LAKI WNI  PEREMPUAN WNI  LAKI-LAKI WNA  \
+        0                  GAMBIR           1790           1690            1.0
+        1                  CIDENG           9159           9206            5.0
+        2            PETOJO UTARA          10811          10436           10.0
+        3          PETOJO SELATAN           8455           8023            5.0
+        4            KEBON KELAPA           6300           6078            6.0
+        5               DURI PULO          13056          12588            2.0
+        6              PASAR BARU           7557           7552           34.0
+        7            KARANG ANYAR          16327          15859            4.0
+        8                 KARTINI          13610          13808            3.0
+        9     GUNUNG SAHARI UTARA           9734           9889           15.0
+        10     MANGGA DUA SELATAN          17269          16458           42.0
+        11              KEMAYORAN          12365          11932            6.0
+        12           KEBON KOSONG          15933          15665           33.0
+        13          HARAPAN MULIA          13523          13049            2.0
+        14                SERDANG          17284          17020            1.0
+        15  GUNUNG SAHARI SELATAN          11730          11487           13.0
+        16           CEMPAKA BARU          19103          18601            NaN
+        17             SUMUR BATU          13441          13288           20.0
+        18           UTAN PANJANG          17125          16351            4.0
+        19                  SENEN           4236           3975           10.0
+        20                 KENARI           5445           5252            2.0
+        21                PASEBAN          13787          13477            NaN
+        22                 KRAMAT          17482          16331            2.0
+        23                KWITANG           9176           9148            1.0
+        24                 BUNGUR          11200          10849            4.0
+        25    CEMPAKA PUTIH TIMUR          13630          13686           24.0
+        26    CEMPAKA PUTIH BARAT          20029          19681           12.0
+        27               RAWASARI          12462          12465            1.0
+        28                MENTENG          14576          14610            7.0
+        29             PEGANGSAAN          13392          13214            2.0
+        30                 CIKINI           4825           4772            5.0
+        31             GONDANGDIA           2196           2443           11.0
+        32            KEBON SIRIH           7976           7439            2.0
+        33                 GELORA           1865           1883            6.0
+        34        BENDUNGAN HILIR          12713          12582           11.0
+        35          KARET TENGSIN          11002          10271           10.0
+        36             PETAMBURAN          20112          18794           17.0
+        37           KEBON MELATI          19826          18672            8.0
+        38           KEBON KACANG          12873          12357            3.0
+        39           KAMPUNG BALI           7348           7205            3.0
+        40             JOHAR BARU          21016          20953            2.0
+        41           KAMPUNG RAWA          13337          12499            1.0
+        42                  GALUR          11077          10259            NaN
+        43           TANAH TINGGI          22680          21450            NaN
