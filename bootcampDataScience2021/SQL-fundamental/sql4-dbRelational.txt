@@ -1,0 +1,42 @@
+Struktur Penyimpanan RDBMS
+    Sebagai penyimpan data, sistem database relasional memiliki struktur hirarki objek penyimpanan sebagai berikut:
+
+        Database
+        Tabel (table)
+        Kolom (column) atau Field
+
+    Dari sini aku belajar informasi menarik yaitu setiap database bisa berisi beberapa tabel, dan setiap tabel bisa terdiri dari beberapa kolom. Di setiap database, tabel dan kolom memiliki nama sendiri sebagai identitas mereka. Tabel dan kolom inilah yang akan diisi data yang kemudian membentuk row (baris data). 
+
+
+
+
+Tabel dan Kolom
+    Gambar berikut adalah contoh suatu Tabel dalam database. Karena setiap tabel dalam database memiliki nama, maka, nama tabel ini adalah ms_produk.
+
+    Jika aku perhatikan, struktur tabel ms_produk terdiri dari empat kolom (column), masing-masing dengan nama berikut:
+
+        no_urut
+        kode_produk
+        nama_produk
+        harga
+
+    Dan dalam tabel tersebut terdapat 10 baris data (row) dengan isi data yang bervariasi, contoh isi data untuk kolom "nama_produk" pada baris kelima adalah "Gift Voucher DQLab 250rb".
+
+
+
+
+Kesimpulan
+    Wah ternyata seru sekali belajar SQL! 
+
+    Aku mulai membuka catataanku, mengambil pena, dan menuliskan apa yang aku pelajari:
+
+        1. Sistem relasional database atau relational database management system (RDBMS) adalah sistem database paling populer di dunia saat ini dan menggunakan bahasa SQL untuk pengolahannya.
+
+        2. Beberapa produk RDBMS yang terkenal antara lain adalah Microsoft SQL Server, Oracle, MySQL, PostgreSQL, IBM DB2, dan masih banyak lainnya.
+
+        3. Struktur penyimpanan data di RDBMS menggunakan hirarki:
+            Database
+            Tabel (Table)
+            Kolom (Column)
+            
+        4. Data akan diisi ke dalam table dalam bentuk Baris (Row) data
