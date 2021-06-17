@@ -1,0 +1,38 @@
+Mengapa Perlu Belajar SQL?
+    “Halo, Aksara! Sudah baca modul barunya?” ujar Senja yang menghampiriku jelang makan siang.
+
+    Aku mengangguk sembari mengangkat modul. Selagi ada Senja, aku pun penasaran untuk bertanya. “Nja, kenapa sih data analyst perlu memahami SQL? Bukankah ada tools lain untuk analisis data, tapi kenapa harus SQL?”
+
+    “Begini, Aksara. Pada dasarnya, setiap perusahaan memiliki sistem penyimpanan data, khususnya untuk perusahaan yang memiliki sistem IT. Sistem penyimpanan ini bukan di komputer atau laptop dalam bentuk file atau folder, tetapi di suatu sistem database. Nah, sistem database ini biasanya diakses menggunakan SQL. Sebagai analyst, tugas kita tidak hanya menganalisa data yang sudah tersedia tetapi juga mampu untuk mengambil, memodifikasi dan mengakses sendiri data tersebut dari sumber datanya, yaitu dari database,” jelas Senja dengan rinci.  Bahkan, ia juga sempat memberiku buku catatannya padaku.
+
+    “Nih coba kamu baca. Selain yang tadi kujelaskan, penguasaan SQL akan membantu perusahaan pada area berikut,” tunjuk Senja pada salah satu halaman buku catatannya:
+
+    Manajemen memerlukan laporan dengan informasi yang semakin beragam, seperti: tren penjualan bulan ke bulan, pertumbuhan pelanggan, apakah perusahaan mencapai target, dan lain-lain. Dan ini membutuhkan keahlian SQL yang mumpuni.
+    Programmer yang membangun sistem aplikasi hampir dipastikan selalu bergantung kepada sistem database SQL agar aplikasinya berjalan dengan baik. Dengan demikian, penguasaan SQL adalah hal mutlak.
+    Bisa meningkatkan kinerja perusahaan karena informasi yang kaya dapat dihasilkan melalui SQL.
+    
+    “Jadi, untuk beberapa alasan inilah, maka tidak heran SQL menjadi keterampilan utama yang diminta oleh banyak perusahaan?” ujarku menyimpulkan.
+
+    Senja mengangguk puas. Aku pun kembali mempelajari isi modul.
+
+
+
+
+Dimana saja SQL Digunakan?
+    Perusahaan – perusahaan yang sudah menerapkan sistem IT pasti memiliki sistem database dan bisa dipastikan menyimpan datanya dalam suatu database. Contohnya perusahaan berbasis teknologi, seperti e-commerce, menyimpan data baik itu data profile user, data transaksi pembelian dan penjualan, data produk dan data traffic kunjungan user ke halaman website di sistem database - atau lebih tepatnya sistem manajemen database atau database management system (DBMS).
+
+    Semua informasi ataupun analisa yang dibutuhkan oleh manajemen, umumnya bersumber dan diolah dari data DBMS ini. Dan di perusahaan, sistem database biasanya tidak hanya satu, bisa dua, tiga bahkan puluhan. Oleh karena itu, SQL sangat berperan disini, karena dengan menggunakan SQL dapat memenuhi kebutuhan manajemen tersebut. Tanpa penguasaan SQL  akan kesulitan memperoleh data yang dibutuhkan, dan akan kesulitan dalam melakukan analisa dan menghasilkan informasi yang dibutuhkan manajemen dan perusahaan.
+
+    Akan tetapi, perlu diketahui bahwa tidak semua sistem database mendukung SQL. Hanya sistem database berbasis relational database management system (RDBMS) yang mendukung bahasa ini. Untuk RDBMS sendiri akan dijelaskan kemudian.
+
+        SQL hanya digunakan di sistem database berbasis Relational Database Management System.
+
+
+
+
+Kesimpulan
+    SQL singkatan dari Structured Query Language, adalah sebuah bahasa komputer sederhana yang menjadi standar untuk memungkinkan seseorang berkomunikasi dengan suatu sistem database manajemen relasional (RDBMS).
+
+    Karena RDBMS bisa dikatakan digunakan oleh sistem IT oleh seluruh perusahaan di dunia dan di Indonesia, maka pengetahuan SQL menjadi aset yang penting di perusahaan. Walaupun sederhana, aspek SQL sangat luas.
+
+    Aku semangat sekali, karena pada module Fundamental SQL using SELECT statement, aku akan mempelajari proses pengambilan data dengan pendekatan best practice yang dibutuhkan oleh mayoritas perusahaan di dunia dan Indonesia.
