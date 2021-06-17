@@ -1,0 +1,68 @@
+Pendahuluan
+    Sejauh ini, aku sudah cukup paham cara menggunakan SQL dengan perintah SELECT, terutama untuk mengakses data dari database. Aku pun berniat untuk mengambil dan menganalisis data produk dengan syntax yang ada:
+
+        SELECT t1.kode_produk AS product_code, t1.nama_produk AS product_name, t1.harga AS price FROM ms_produk AS t1;
+    
+    Beberapa detik aku termenung melihat syntax ini. Mengapa ada ‘t1’, dan ‘AS’? Apa maksudnya? Aku terdorong untuk bertanya kembali pada Senja.
+
+    “Nja, sorry gangguin kamu lagi. Aku lagi mau nyoba latihan nih. Tapi aku nemu syntax ini dan agak bingung terutama karena ada ‘t1’, dan ‘AS’. Maksudnya?”
+
+    “Oh, ini hanya variasi penggunaan nama table dan kolom pada bagian SELECT. Sini saya kasih tahu.”
+
+    Aku pun mencatat penjelasan Senja, walau sederhana tapi penting:
+
+        Prefix, dimana kita akan menambahkan nama tabel di depan nama kolom.
+        Alias, dimana kita memberikan alias atau nama lain untuk tabel maupun kolom.
+
+
+
+
+Menggunakan Prefix pada Nama Kolom
+    “Agar kamu lebih jelas, saya coba praktikkan untuk kamu ya, Aksara.  Pertama, kita mulai dengan menggunakan prefix pada kolom. Pada dasarnya, penulisan nama kolom yang lengkap perlu mencantumkan nama tabel di depan nama kolom tersebut, dengan tanda penyambung berupa tanda titik. Umumnya, jika kita hanya mengambil kolom dari satu tabel, prefix ini jarang digunakan karena sudah jelas dari tabel mana kolom itu berasal. Tetapi ketika kita mengambil data dari dua tabel, misalnya dengan menggabungkan 2 tabel menggunakan JOIN, dan terdapat 2 kolom dengan nama yang sama, maka penggunaan prefix menjadi penting untuk menghindari error karena ambiguitas,” jelas Senja panjang lebar.
+
+    Aku masih menyimpak pada layar laptop Senja yang menunjukkan syntax dasar dari penggunaan prefix pada nama kolom.
+
+    Untuk mengambil nama kolom nama_produk data dari tabel ms_produk dengan penulisan prefix nama tabel adalah sebagai berikut.
+
+        SELECT ms_produk.nama_produk FROM ms_produk;
+
+    Jika berjalan dengan lancar maka akan mendapatkan hasil berikut.
+
+        +------------------------------------+
+        | nama_produk                        |
+        +------------------------------------+
+        | Kotak Pensil DQLab                 |
+        | Flashdisk DQLab 64 GB              |
+        | Gift Voucher DQLab 100rb           |
+        | Flashdisk DQLab 32 GB              |
+        | Gift Voucher DQLab 250rb           |
+        | Pulpen Multifunction + Laser DQLab |
+        | Tas Travel Organizer DQLab         |
+        | Gantungan Kunci DQLab              |
+        | Buku Planner Agenda DQLab          |
+        | Sticky Notes DQLab 500 sheets      |
+        +------------------------------------+
+
+    Penggunaan nama lengkap prefix ini akan sangat berguna ketika ingin mengidentifikasi data dari beberapa tabel, yang akan dipelajari pada course SQL untuk topik JOIN.
+
+        Tugas:
+        Gantilah seluruh code yang ada pada code editor dengan perintah SELECT untuk menampilkan kolom kode_produk dari tabel ms_produk dengan penulisan menggunakan prefix nama tabel.
+
+            SELECT ms_produk.kode_produk FROM ms_produk;
+
+        Jika berjalan dengan lancar maka hasilnya akan terlihat sebagai berikut.
+
+            +-------------+
+            | kode_produk |
+            +-------------+
+            | prod-01     |
+            | prod-02     |
+            | prod-03     |
+            | prod-04     |
+            | prod-05     |
+            | prod-06     |
+            | prod-07     |
+            | prod-08     |
+            | prod-09     |
+            | prod-10     |
+            +-------------+
