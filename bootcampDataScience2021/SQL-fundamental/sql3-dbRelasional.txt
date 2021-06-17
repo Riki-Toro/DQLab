@@ -46,3 +46,4 @@ Produk-produk RDBMS di Pasaran
                     MySQL                                   Oracle                              SQLSERVER
         select field(s) from table_name         select field(s) from table_name         select TOP(N) field(s) from
         LIMIT N;                                where ROWNUM <= N                       table_name
+        

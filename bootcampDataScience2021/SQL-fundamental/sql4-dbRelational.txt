@@ -40,3 +40,4 @@ Kesimpulan
             Kolom (Column)
             
         4. Data akan diisi ke dalam table dalam bentuk Baris (Row) data
+        

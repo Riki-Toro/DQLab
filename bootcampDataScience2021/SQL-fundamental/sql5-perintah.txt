@@ -130,3 +130,4 @@ Mengambil Lebih dari Satu Kolom dari Tabel
             +------------------------------------+--------+ 
 
         Ingat: untuk MySQL nama kolom sensitif terhadap huruf besar maupun kecil.
+        

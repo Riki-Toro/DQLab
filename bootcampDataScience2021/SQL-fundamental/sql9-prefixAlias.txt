@@ -1,0 +1,142 @@
+Menggunakan Alias pada Tabel
+    Selain kolom, nama alias juga bisa digunakan untuk tabel dengan menggunakan keyword AS setelah nama tabel. Dan, keyword ini juga bisa digunakan atau tidak. Umumnya penggunaan alias pada tabel jika nama tabel tersebut cukup panjang dan muncul atau dirujuk beberapa kali dalam query. Sehingga dengan menggunakan alias pada tabel, dapat menghemat waktu dalam menuliskan query, khususnya untuk query yang cukup rumit, panjang dan melibatkan banyak tabel.
+
+    Penulisannya adalah sebagai berikut.
+
+    Berikut adalah contoh untuk menggunakan alias pada tabel ms_produk menjadi t1.
+
+        SELECT * FROM ms_produk AS t1; 
+
+    Jika berjalan dengan lancar maka akan memberi hasil berikut.
+
+        +---------+-------------+------------------------------------+--------+
+        | no_urut | kode_produk | nama_produk                        | harga  |
+        +---------+-------------+------------------------------------+--------+
+        |       1 | prod-01     | Kotak Pensil DQLab                 |  62500 |
+        |       2 | prod-02     | Flashdisk DQLab 64 GB              |  55000 |
+        |       3 | prod-03     | Gift Voucher DQLab 100rb           | 100000 |
+        |       4 | prod-04     | Flashdisk DQLab 32 GB              |  40000 |
+        |       5 | prod-05     | Gift Voucher DQLab 250rb           | 250000 |
+        |       6 | prod-06     | Pulpen Multifunction + Laser DQLab |  92500 |
+        |       7 | prod-07     | Tas Travel Organizer DQLab         |  48000 |
+        |       8 | prod-08     | Gantungan Kunci DQLab              |  15800 |
+        |       9 | prod-09     | Buku Planner Agenda DQLab          |  92000 |
+        |      10 | prod-10     | Sticky Notes DQLab 500 sheets      |  55000 |
+        +---------+-------------+------------------------------------+--------+
+
+    Terlihat hasil yang dikeluarkan adalah seluruh isi tabel ms_produk.
+
+        Tugas:
+        Ganti nama tabel ms_produk menjadi t2 dan tampilkan seluruh isinya tanpa menggunakan keyword AS.
+
+            SELECT * FROM ms_produk t2; 
+
+        output : 
+
+            +---------+-------------+------------------------------------+--------+
+            | no_urut | kode_produk | nama_produk                        | harga  |
+            +---------+-------------+------------------------------------+--------+
+            |       1 | prod-01     | Kotak Pensil DQLab                 |  62500 |
+            |       2 | prod-02     | Flashdisk DQLab 64 GB              |  55000 |
+            |       3 | prod-03     | Gift Voucher DQLab 100rb           | 100000 |
+            |       4 | prod-04     | Flashdisk DQLab 32 GB              |  40000 |
+            |       5 | prod-05     | Gift Voucher DQLab 250rb           | 250000 |
+            |       6 | prod-06     | Pulpen Multifunction + Laser DQLab |  92500 |
+            |       7 | prod-07     | Tas Travel Organizer DQLab         |  48000 |
+            |       8 | prod-08     | Gantungan Kunci DQLab              |  15800 |
+            |       9 | prod-09     | Buku Planner Agenda DQLab          |  92000 |
+            |      10 | prod-10     | Sticky Notes DQLab 500 sheets      |  55000 |
+            +---------+-------------+------------------------------------+--------+
+
+
+
+
+Prefix dengan Alias Tabel
+    Aku menyela sebentar penjelasan Senja karena masih penasaran mengenai Prefix ini.
+
+    “Nja, kalau kita menggunakan alias tabel, maka nama prefix yang digunakan untuk kolom adalah alias tabel dan bukan nama original tabel, seperti yang ditunjukkan berikut ini. Gimana hasilnya?”
+
+    “Penggunaan nama original tabel sebagai prefix akan menimbulkan error saat query dijalankan karena dengan penggunaan alias, nama tabel secara temporary sudah di-gantikan oleh alias, Aksara,” jawab Senja lugas.
+
+    Aku mengangguk. Senja pun kembali melanjutkan penjelasannya.
+
+    Mari lihat contoh berikut ini dari tabel ms_produk yang telah digunakan sebelumnya
+
+        SELECT t1.kode_produk, t1.nama_produk FROM ms_produk AS t1;
+
+    Jalankan dan jika berhasil dengan baik maka akan memunculkan hasil berikut.
+
+        +-------------+------------------------------------+
+        | kode_produk | nama_produk                        |
+        +-------------+------------------------------------+
+        | prod-01     | Kotak Pensil DQLab                 |
+        | prod-02     | Flashdisk DQLab 64 GB              |
+        | prod-03     | Gift Voucher DQLab 100rb           |
+        | prod-04     | Flashdisk DQLab 32 GB              |
+        | prod-05     | Gift Voucher DQLab 250rb           |
+        | prod-06     | Pulpen Multifunction + Laser DQLab |
+        | prod-07     | Tas Travel Organizer DQLab         |
+        | prod-08     | Gantungan Kunci DQLab              |
+        | prod-09     | Buku Planner Agenda DQLab          |
+        | prod-10     | Sticky Notes DQLab 500 sheets      |
+        +-------------+------------------------------------+
+
+    Jika kolom dan tabel memiliki alias, dapat dilakukan dengan mengetikkan perintah berikut di code editor
+
+        SELECT t1.kode_produk AS product_code, t1.nama_produk AS product_name FROM ms_produk AS t1;
+
+    “Oke, Nja. Sekarang aku sudah paham syntax query,” ujarku bersemangat.
+
+    Dari apa yang ditunjukkan Senja, aku bisa mengetahui kalau Senja menggunakan alias tabel yaitu t1, prefix untuk kolom adalah t1, dan alias untuk nama kolom. Maka itu, hasil yang diperoleh dengan menjalankan query adalah seperti ini:
+
+        +--------------+------------------------------------+
+        | product_code | product_name                       |
+        +--------------+------------------------------------+
+        | prod-01      | Kotak Pensil DQLab                 |
+        | prod-02      | Flashdisk DQLab 64 GB              |
+        | prod-03      | Gift Voucher DQLab 100rb           |
+        | prod-04      | Flashdisk DQLab 32 GB              |
+        | prod-05      | Gift Voucher DQLab 250rb           |
+        | prod-06      | Pulpen Multifunction + Laser DQLab |
+        | prod-07      | Tas Travel Organizer DQLab         |
+        | prod-08      | Gantungan Kunci DQLab              |
+        | prod-09      | Buku Planner Agenda DQLab          |
+        | prod-10      | Sticky Notes DQLab 500 sheets      |
+        +--------------+------------------------------------+
+
+    Tugas:
+    Gantilah perintah pada code editor dengan nama alias t2 - tanpa menggunakan keyword AS - untuk tabel ms_produk dan menampilkan kolom nama_produk dan harga, lengkap dengan prefix alias.
+
+        SELECT t2.nama_produk, t2.harga FROM ms_produk t2;
+
+    Jika berjalan dengan lancar maka akan memunculkan hasil berikut.
+
+        +------------------------------------+--------+
+        | nama_produk                        | harga  |
+        +------------------------------------+--------+
+        | Kotak Pensil DQLab                 |  62500 |
+        | Flashdisk DQLab 64 GB              |  55000 |
+        | Gift Voucher DQLab 100rb           | 100000 |
+        | Flashdisk DQLab 32 GB              |  40000 |
+        | Gift Voucher DQLab 250rb           | 250000 |
+        | Pulpen Multifunction + Laser DQLab |  92500 |
+        | Tas Travel Organizer DQLab         |  48000 |
+        | Gantungan Kunci DQLab              |  15800 |
+        | Buku Planner Agenda DQLab          |  92000 |
+        | Sticky Notes DQLab 500 sheets      |  55000 |
+        +------------------------------------+--------+
+
+
+
+
+Kesimpulan
+    Aku kembali mengambil catatanku dan menuliskan apa yang telah aku pelajari:
+
+        Perintah SELECT dapat ditulis dengan variasi identitas kolom dan tabel berupa prefix dan alias.
+
+            1. Penulisan lengkap untuk nama kolom adalah prefix berupa nama tabel disertai tanda titik sebelum nama kolom itu sendiri.
+            2. Alias adalah nama lain yang diberikan untuk kolom maupun tabel.
+            3. Alias dapat digunakan dengan keyword AS atau tanpa keyword AS setelah nama kolom dan tabel.
+            4. Prefix nama tabel bisa menggunakan alias.
+            
+    Pemahaman mengenai prefix dan alias akan mendorong kemampuan identifikasi tabel maupun kolom yang terlibat untuk perintah SELECT yang lebih kompleks.
