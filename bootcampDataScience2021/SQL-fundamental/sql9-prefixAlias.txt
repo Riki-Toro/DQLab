@@ -140,3 +140,4 @@ Kesimpulan
             4. Prefix nama tabel bisa menggunakan alias.
             
     Pemahaman mengenai prefix dan alias akan mendorong kemampuan identifikasi tabel maupun kolom yang terlibat untuk perintah SELECT yang lebih kompleks.
+    
